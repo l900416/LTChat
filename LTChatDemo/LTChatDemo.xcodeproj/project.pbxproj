@@ -13,6 +13,9 @@
 		270FFB391F8B6FDE00C6F62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB371F8B6FDE00C6F62E /* Main.storyboard */; };
 		270FFB3B1F8B6FDE00C6F62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB3A1F8B6FDE00C6F62E /* Assets.xcassets */; };
 		270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB3C1F8B6FDE00C6F62E /* LaunchScreen.storyboard */; };
+		27235CD41F8BA8DB00A15FD8 /* LTChatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */; };
+		27235CD81F8BB46400A15FD8 /* LTChatXMPPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CD71F8BB46400A15FD8 /* LTChatXMPPClient.m */; };
+		27235CDB1F8BC80000A15FD8 /* LTChatWebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CDA1F8BC80000A15FD8 /* LTChatWebRTCClient.m */; };
 		F1B3AFAAEDA351446636F29F /* Pods_LTChatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,12 @@
 		270FFB3A1F8B6FDE00C6F62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270FFB3D1F8B6FDE00C6F62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270FFB3F1F8B6FDE00C6F62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27235CD21F8BA8DB00A15FD8 /* LTChatConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatConfig.h; sourceTree = "<group>"; };
+		27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatConfig.m; sourceTree = "<group>"; };
+		27235CD61F8BB46400A15FD8 /* LTChatXMPPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatXMPPClient.h; sourceTree = "<group>"; };
+		27235CD71F8BB46400A15FD8 /* LTChatXMPPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatXMPPClient.m; sourceTree = "<group>"; };
+		27235CD91F8BC80000A15FD8 /* LTChatWebRTCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatWebRTCClient.h; sourceTree = "<group>"; };
+		27235CDA1F8BC80000A15FD8 /* LTChatWebRTCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatWebRTCClient.m; sourceTree = "<group>"; };
 		399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTChatDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B9C493C6004F2751605B3A /* Pods-LTChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CE4AC64926F0AB07ED8B4CE7 /* Pods-LTChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +74,7 @@
 		270FFB2D1F8B6FDE00C6F62E /* LTChatDemo */ = {
 			isa = PBXGroup;
 			children = (
-				270FFB451F8B748300C6F62E /* LTChat */,
+				27235CD11F8BA8CE00A15FD8 /* LTChat */,
 				270FFB311F8B6FDE00C6F62E /* AppDelegate.h */,
 				270FFB321F8B6FDE00C6F62E /* AppDelegate.m */,
 				270FFB341F8B6FDE00C6F62E /* ViewController.h */,
@@ -87,27 +96,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		270FFB451F8B748300C6F62E /* LTChat */ = {
+		27235CD11F8BA8CE00A15FD8 /* LTChat */ = {
 			isa = PBXGroup;
 			children = (
-				270FFB461F8B74DC00C6F62E /* Core */,
-				270FFB471F8B74DC00C6F62E /* UI */,
+				27235CD21F8BA8DB00A15FD8 /* LTChatConfig.h */,
+				27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */,
+				27235CD61F8BB46400A15FD8 /* LTChatXMPPClient.h */,
+				27235CD71F8BB46400A15FD8 /* LTChatXMPPClient.m */,
+				27235CD91F8BC80000A15FD8 /* LTChatWebRTCClient.h */,
+				27235CDA1F8BC80000A15FD8 /* LTChatWebRTCClient.m */,
 			);
 			path = LTChat;
-			sourceTree = "<group>";
-		};
-		270FFB461F8B74DC00C6F62E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		270FFB471F8B74DC00C6F62E /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		CAAAF41445C80129710EBC8B /* Pods */ = {
@@ -264,8 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				270FFB361F8B6FDE00C6F62E /* ViewController.m in Sources */,
+				27235CD81F8BB46400A15FD8 /* LTChatXMPPClient.m in Sources */,
 				270FFB331F8B6FDE00C6F62E /* AppDelegate.m in Sources */,
 				270FFB301F8B6FDE00C6F62E /* main.m in Sources */,
+				27235CD41F8BA8DB00A15FD8 /* LTChatConfig.m in Sources */,
+				27235CDB1F8BC80000A15FD8 /* LTChatWebRTCClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LTChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangtong.LTChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LTChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangtong.LTChatDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
