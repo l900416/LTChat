@@ -7,16 +7,32 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <WebRTC/WebRTC.h>
+#import "LTChatWebRTCView.h"
 
 @interface LTChatWebRTCClient : NSObject
 
-@property (copy, nonatomic)     NSString            *myJID;  /** 自己的JID */
-@property (copy, nonatomic)     NSString            *remoteJID;    /** 对方JID */
+//聊天界面
+@property (nonatomic, strong) LTChatWebRTCView* rtcView;
+//自己的JID
+@property (copy, nonatomic) NSString* myJID;
+//对方JID
+@property (copy, nonatomic) NSString* remoteJID;
 
 
 /**
  * 单例模式
  **/
 + (instancetype)sharedInstance;
+
+
+- (void)startEngine;
+
+- (void)stopEngine;
+
+- (void)showRTCViewByRemoteName:(NSString *)remoteName isVideo:(BOOL)isVideo isCaller:(BOOL)isCaller;
+
+- (void)resizeViews;
+
 @end

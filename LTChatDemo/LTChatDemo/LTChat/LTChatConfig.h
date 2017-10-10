@@ -56,6 +56,39 @@
 //WEBRTC消息变更通知
 #define kLTCHAT_XMPP_WEBRTC_MESSAGE_CHANGE  @"kLTCHAT_XMPP_WEBRTC_MESSAGE_CHANGE"
 
+/**WebRTC挂断通知,Object中附带参数
+ @{
+ @"isVideo":@(self.isVideo),     // 是否是视频通话
+ @"isCaller":@(!self.callee),    // 是否是发起方挂断
+ @"answered":@(self.answered)    // 通话是否已经接通
+ }
+ */
+#define kLTCHAT_WEBRTC_HANGUP_NOTIFICATION  @"kLTCHAT_WEBRTC_HANGUP_NOTIFICATION"
+
+/**WebRTC接听通知,Object中附带参数
+ @{
+ @"isVideo":@(YES),      // 是否为视频通话
+ @"audioAccept":@(YES)   // 是否为语音接听，音频通话和视频通话里的语音接听都是YES
+ }
+ */
+#define kLTCHAT_WEBRTC_ACCEPT_NOTIFICATION  @"kLTCHAT_WEBRTC_ACCEPT_NOTIFICATION"
+
+// 摄像头切换的通知，接收到该通知时，需要切换摄像头,默认应该是开启前置摄像头
+#define kLTCHAT_WEBRTC_SWITCH_CAMERA_NOTIFICATION  @"kLTCHAT_WEBRTC_SWITCH_CAMERA_NOTIFICATION"
+
+/**静音按钮事件通知, 静音之后，对方听不到自己这边的任何声音,Object中附带参数
+ @{
+ @"isMute":@(self.muteBtn.selected)
+ }
+ */
+#define kLTCHAT_WEBRTC_MUTE_NOTIFICATION  @"kLTCHAT_WEBRTC_MUTE_NOTIFICATION"
+
+/**开启和关闭本地摄像头的事件，需要在收到通知后，开启或者关闭视频采集功能,Object中附带参数
+ @{
+ @"videoCapture":@(YES)
+ }
+ */
+#define kLTCHAT_WEBRTC_CAPTURE_NOTIFICATION  @"kLTCHAT_WEBRTC_CAPTURE_NOTIFICATION"
 
 /**
  * Chat Config
