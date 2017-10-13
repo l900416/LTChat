@@ -83,10 +83,15 @@ static LTChatWebRTCClient *_instance;
 
 - (void)showRTCViewByRemoteName:(NSString *)remoteName isVideo:(BOOL)isVideo isCaller:(BOOL)isCaller{
     // 1.显示视图
-    self.rtcView = [[LTChatWebRTCView alloc] initWithIsCallee:!isCaller];
-    self.rtcView.nickName = remoteName;
-    self.rtcView.connectText = @"等待对方接听";
-    self.rtcView.netTipText = @"网络状况良好";
+    
+    NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"LTVideoChatView" owner:nil options:nil];
+    LTVideoChatView* videoChatView = [nibContents lastObject];
+    [videoChatView setupWithIsCallee:!isCaller];
+    
+    self.rtcView = videoChatView;
+//    self.rtcView.nickName = remoteName;
+//    self.rtcView.connectText = @"等待对方接听";
+//    self.rtcView.netTipText = @"网络状况良好";
     [self.rtcView show];
     
     // 2.播放声音
@@ -114,7 +119,7 @@ static LTChatWebRTCClient *_instance;
     } else {
         // 如果是接收者，就要处理信令信息，创建一个answer
         NSLog(@"如果是接收者，就要处理信令信息");
-        self.rtcView.connectText = isVideo ? @"视频通话":@"语音通话";
+//        self.rtcView.connectText = isVideo ? @"视频通话":@"语音通话";
     }
 }
 
@@ -167,18 +172,18 @@ static LTChatWebRTCClient *_instance;
     
     NSLog(@"Create Local Media Stream");
     
-    RTCEAGLVideoView *localVideoView = [[RTCEAGLVideoView alloc] initWithFrame:self.rtcView.ownImageView.bounds];
+    RTCEAGLVideoView *localVideoView = [[RTCEAGLVideoView alloc] initWithFrame:self.rtcView.localView.bounds];
     localVideoView.transform = CGAffineTransformMakeScale(-1, 1);
     localVideoView.delegate = self;
-    [self.rtcView.ownImageView addSubview:localVideoView];
+    [self.rtcView.localView addSubview:localVideoView];
     self.localVideoView = localVideoView;
     
     [self.localVideoTrack addRenderer:self.localVideoView];
     
-    RTCEAGLVideoView *remoteVideoView = [[RTCEAGLVideoView alloc] initWithFrame:self.rtcView.adverseImageView.bounds];
+    RTCEAGLVideoView *remoteVideoView = [[RTCEAGLVideoView alloc] initWithFrame:self.rtcView.remoteView.bounds];
     remoteVideoView.transform = CGAffineTransformMakeScale(-1, 1);
     remoteVideoView.delegate = self;
-    [self.rtcView.adverseImageView addSubview:remoteVideoView];
+    [self.rtcView.remoteView addSubview:remoteVideoView];
     self.remoteVideoView = remoteVideoView;
 }
 
@@ -224,8 +229,8 @@ static LTChatWebRTCClient *_instance;
 }
 
 - (void)resizeViews{
-    [self videoView:self.localVideoView didChangeVideoSize:self.rtcView.ownImageView.bounds.size];
-    [self videoView:self.remoteVideoView didChangeVideoSize:self.rtcView.adverseImageView.bounds.size];
+    [self videoView:self.localVideoView didChangeVideoSize:self.rtcView.localView.bounds.size];
+    [self videoView:self.remoteVideoView didChangeVideoSize:self.rtcView.remoteView.bounds.size];
 }
 
 #pragma mark - notification events
@@ -376,8 +381,8 @@ didChangeSignalingState:(RTCSignalingState)stateChanged{
         [self.remoteVideoTrack addRenderer:self.remoteVideoView];
     }
     
-    [self videoView:self.remoteVideoView didChangeVideoSize:self.rtcView.adverseImageView.bounds.size];
-    [self videoView:self.localVideoView didChangeVideoSize:self.rtcView.ownImageView.bounds.size];
+    [self videoView:self.remoteVideoView didChangeVideoSize:self.rtcView.remoteView.bounds.size];
+    [self videoView:self.localVideoView didChangeVideoSize:self.rtcView.localView.bounds.size];
 }
 
 // Triggered when a remote peer close a stream.

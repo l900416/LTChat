@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 #import <WebRTC/WebRTC.h>
-#import "LTChatWebRTCView.h"
+#import "LTVideoChatView.h"
 
 @interface LTChatWebRTCClient : NSObject
 
 //聊天界面
-@property (nonatomic, strong) LTChatWebRTCView* rtcView;
+@property (nonatomic, strong) LTVideoChatView* rtcView;
 //自己的JID
 @property (copy, nonatomic) NSString* myJID;
 //对方JID

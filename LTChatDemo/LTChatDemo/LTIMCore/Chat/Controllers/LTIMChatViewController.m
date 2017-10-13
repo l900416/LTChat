@@ -22,6 +22,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.inputToolbar.contentView.leftBarButtonItemWidth = 60.f;
+    [self.inputToolbar.contentView.leftBarButtonItem setImage:[UIImage imageNamed:@"ic_rtc_call"] forState:UIControlStateNormal];
+    
     self.viewModel = [[LTIMChatViewModel alloc] initWithChatJid:self.chatJID];
     [self.viewModel refreshChatHistory];
     
