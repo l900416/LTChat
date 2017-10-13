@@ -1,11 +1,11 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
 ENABLE_BITCODE = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket" "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack" "$PODS_CONFIGURATION_BUILD_DIR/KissXML" "$PODS_CONFIGURATION_BUILD_DIR/XMPPFramework" "${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket" "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack" "$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController" "$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer" "$PODS_CONFIGURATION_BUILD_DIR/KissXML" "$PODS_CONFIGURATION_BUILD_DIR/XMPPFramework" "${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2 $(inherited) $(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GoogleWebRTC"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/KissXML/KissXML.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/XMPPFramework/XMPPFramework.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GoogleWebRTC"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "CocoaAsyncSocket" -framework "CocoaLumberjack" -framework "KissXML" -framework "WebRTC" -framework "XMPPFramework"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/JSQMessagesViewController/JSQMessagesViewController.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/KissXML/KissXML.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/XMPPFramework/XMPPFramework.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GoogleWebRTC"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "CocoaAsyncSocket" -framework "CocoaLumberjack" -framework "JSQMessagesViewController" -framework "JSQSystemSoundPlayer" -framework "KissXML" -framework "WebRTC" -framework "XMPPFramework"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

@@ -39,7 +39,7 @@ static LTChatConfig *_instance;
     
     /*WebRTC*/
     _webrtcCall = @"call_webrtc";
-    _webrtcCancel = @"cancel_webrtc";
+    _webrtcCancel = @"stop_webrtc";
     _webrtcAccept = @"accept_webrtc";
     _webrtcReject = @"reject_webrtc";
     _webrtcStop = @"stop_webrtc";

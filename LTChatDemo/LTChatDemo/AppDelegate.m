@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LTChatConfig.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [LTChatConfig sharedInstance].xmppHost = @"192.168.1.75";
+    [LTChatConfig sharedInstance].xmppPort = 8810;
+    [LTChatConfig sharedInstance].xmppDomain = @"ms-linuxuat";
+    [LTChatConfig sharedInstance].xmppResource = @"iOS";
     return YES;
 }
 

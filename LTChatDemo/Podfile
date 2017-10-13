@@ -10,4 +10,5 @@ target 'LTChatDemo' do
     pod 'XMPPFramework', '~> 3.7.0'
     pod 'GoogleWebRTC'
 
+    pod 'JSQMessagesViewController'    
 end
