@@ -1,7 +1,7 @@
 # LTChat
 Chat use XMPP framework and WebRTC framework
 
-![](https://github.com/l900416/LTChat/blob/master/screenshots/1.png)
+![](https://github.com/l900416/LTChat/blob/master/screenshots/1.PNG)
 
 
 ### Upcoming features
