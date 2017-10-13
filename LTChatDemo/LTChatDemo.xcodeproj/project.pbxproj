@@ -13,22 +13,7 @@
 		270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB3C1F8B6FDE00C6F62E /* LaunchScreen.storyboard */; };
 		270FFB4B1F8C580D00C6F62E /* LTChatWebRTCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFB4A1F8C580D00C6F62E /* LTChatWebRTCView.m */; };
 		270FFB4E1F8C69FF00C6F62E /* LTChatWebRTCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFB4D1F8C69FF00C6F62E /* LTChatWebRTCButton.m */; };
-		270FFB7D1F8C6D2400C6F62E /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB501F8C6D2400C6F62E /* 123.png */; };
-		270FFB7E1F8C6D2400C6F62E /* 456.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB511F8C6D2400C6F62E /* 456.png */; };
-		270FFB7F1F8C6D2400C6F62E /* call_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB521F8C6D2400C6F62E /* call_bg@2x.png */; };
-		270FFB801F8C6D2400C6F62E /* icon_audio_receive_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB531F8C6D2400C6F62E /* icon_audio_receive_normal@2x.png */; };
-		270FFB811F8C6D2400C6F62E /* icon_audio_receive_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB541F8C6D2400C6F62E /* icon_audio_receive_press@2x.png */; };
-		270FFB821F8C6D2400C6F62E /* icon_av_audio_micro_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB551F8C6D2400C6F62E /* icon_av_audio_micro_normal@2x.png */; };
-		270FFB831F8C6D2400C6F62E /* icon_av_audio_micro_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB561F8C6D2400C6F62E /* icon_av_audio_micro_press@2x.png */; };
-		270FFB841F8C6D2400C6F62E /* icon_av_audio_receive_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB571F8C6D2400C6F62E /* icon_av_audio_receive_normal@2x.png */; };
-		270FFB851F8C6D2400C6F62E /* icon_av_audio_receive_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB581F8C6D2400C6F62E /* icon_av_audio_receive_press@2x.png */; };
-		270FFB861F8C6D2400C6F62E /* icon_av_reply_message_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB591F8C6D2400C6F62E /* icon_av_reply_message_normal@2x.png */; };
-		270FFB871F8C6D2400C6F62E /* icon_av_reply_message_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB5A1F8C6D2400C6F62E /* icon_av_reply_message_press@2x.png */; };
 		270FFB881F8C6D2400C6F62E /* icon_avp_camera_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB5B1F8C6D2400C6F62E /* icon_avp_camera_white@2x.png */; };
-		270FFB891F8C6D2400C6F62E /* icon_avp_invite_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB5C1F8C6D2400C6F62E /* icon_avp_invite_black@2x.png */; };
-		270FFB8A1F8C6D2400C6F62E /* icon_avp_invite_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB5D1F8C6D2400C6F62E /* icon_avp_invite_blue@2x.png */; };
-		270FFB8B1F8C6D2400C6F62E /* icon_avp_invite_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB5E1F8C6D2400C6F62E /* icon_avp_invite_gray@2x.png */; };
-		270FFB8C1F8C6D2400C6F62E /* icon_avp_invite_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB5F1F8C6D2400C6F62E /* icon_avp_invite_white@2x.png */; };
 		270FFB8D1F8C6D2400C6F62E /* icon_avp_loudspeaker_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB601F8C6D2400C6F62E /* icon_avp_loudspeaker_black@2x.png */; };
 		270FFB8E1F8C6D2400C6F62E /* icon_avp_loudspeaker_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB611F8C6D2400C6F62E /* icon_avp_loudspeaker_blue@2x.png */; };
 		270FFB8F1F8C6D2400C6F62E /* icon_avp_loudspeaker_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB621F8C6D2400C6F62E /* icon_avp_loudspeaker_gray@2x.png */; };
@@ -37,20 +22,9 @@
 		270FFB921F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB651F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png */; };
 		270FFB931F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB661F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png */; };
 		270FFB941F8C6D2400C6F62E /* icon_avp_mute_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB671F8C6D2400C6F62E /* icon_avp_mute_white@2x.png */; };
-		270FFB951F8C6D2400C6F62E /* icon_avp_reduce_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB681F8C6D2400C6F62E /* icon_avp_reduce_black@2x.png */; };
-		270FFB961F8C6D2400C6F62E /* icon_avp_reduce_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB691F8C6D2400C6F62E /* icon_avp_reduce_blue@2x.png */; };
-		270FFB971F8C6D2400C6F62E /* icon_avp_reduce_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB6A1F8C6D2400C6F62E /* icon_avp_reduce_gray@2x.png */; };
-		270FFB981F8C6D2400C6F62E /* icon_avp_reduce_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB6B1F8C6D2400C6F62E /* icon_avp_reduce_white@2x.png */; };
-		270FFB991F8C6D2400C6F62E /* icon_avp_video_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB6C1F8C6D2400C6F62E /* icon_avp_video_black@2x.png */; };
-		270FFB9A1F8C6D2400C6F62E /* icon_avp_video_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB6D1F8C6D2400C6F62E /* icon_avp_video_blue@2x.png */; };
-		270FFB9B1F8C6D2400C6F62E /* icon_avp_video_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB6E1F8C6D2400C6F62E /* icon_avp_video_gray@2x.png */; };
-		270FFB9C1F8C6D2400C6F62E /* icon_avp_video_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB6F1F8C6D2400C6F62E /* icon_avp_video_white@2x.png */; };
 		270FFB9D1F8C6D2400C6F62E /* icon_call_reject_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB701F8C6D2400C6F62E /* icon_call_reject_normal@2x.png */; };
 		270FFB9E1F8C6D2400C6F62E /* icon_call_reject_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB711F8C6D2400C6F62E /* icon_call_reject_press@2x.png */; };
 		270FFB9F1F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB721F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg */; };
-		270FFBA01F8C6D2400C6F62E /* portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB731F8C6D2400C6F62E /* portrait.jpg */; };
-		270FFBA11F8C6D2400C6F62E /* portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB741F8C6D2400C6F62E /* portrait@2x.png */; };
-		270FFBA21F8C6D2400C6F62E /* view_audio_reply_message_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB751F8C6D2400C6F62E /* view_audio_reply_message_bg@2x.png */; };
 		270FFBA31F8C6D2400C6F62E /* AVChat_busy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB771F8C6D2400C6F62E /* AVChat_busy.mp3 */; };
 		270FFBA41F8C6D2400C6F62E /* AVChat_endCall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB781F8C6D2400C6F62E /* AVChat_endCall.mp3 */; };
 		270FFBA51F8C6D2400C6F62E /* AVChat_incoming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB791F8C6D2400C6F62E /* AVChat_incoming.mp3 */; };
@@ -64,6 +38,8 @@
 		270FFBC41F9054EF00C6F62E /* LTIMRosterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */; };
 		270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */; };
 		270FFBC71F90550300C6F62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC61F90550300C6F62E /* Main.storyboard */; };
+		270FFBCA1F90977A00C6F62E /* icon_audio_receive_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC81F90977A00C6F62E /* icon_audio_receive_normal@2x.png */; };
+		270FFBCB1F90977A00C6F62E /* icon_audio_receive_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC91F90977A00C6F62E /* icon_audio_receive_press@2x.png */; };
 		27235CD41F8BA8DB00A15FD8 /* LTChatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */; };
 		27235CD81F8BB46400A15FD8 /* LTChatXMPPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CD71F8BB46400A15FD8 /* LTChatXMPPClient.m */; };
 		27235CDB1F8BC80000A15FD8 /* LTChatWebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CDA1F8BC80000A15FD8 /* LTChatWebRTCClient.m */; };
@@ -82,22 +58,7 @@
 		270FFB4A1F8C580D00C6F62E /* LTChatWebRTCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatWebRTCView.m; sourceTree = "<group>"; };
 		270FFB4C1F8C69FF00C6F62E /* LTChatWebRTCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatWebRTCButton.h; sourceTree = "<group>"; };
 		270FFB4D1F8C69FF00C6F62E /* LTChatWebRTCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatWebRTCButton.m; sourceTree = "<group>"; };
-		270FFB501F8C6D2400C6F62E /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
-		270FFB511F8C6D2400C6F62E /* 456.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 456.png; sourceTree = "<group>"; };
-		270FFB521F8C6D2400C6F62E /* call_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_bg@2x.png"; sourceTree = "<group>"; };
-		270FFB531F8C6D2400C6F62E /* icon_audio_receive_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_audio_receive_normal@2x.png"; sourceTree = "<group>"; };
-		270FFB541F8C6D2400C6F62E /* icon_audio_receive_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_audio_receive_press@2x.png"; sourceTree = "<group>"; };
-		270FFB551F8C6D2400C6F62E /* icon_av_audio_micro_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_av_audio_micro_normal@2x.png"; sourceTree = "<group>"; };
-		270FFB561F8C6D2400C6F62E /* icon_av_audio_micro_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_av_audio_micro_press@2x.png"; sourceTree = "<group>"; };
-		270FFB571F8C6D2400C6F62E /* icon_av_audio_receive_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_av_audio_receive_normal@2x.png"; sourceTree = "<group>"; };
-		270FFB581F8C6D2400C6F62E /* icon_av_audio_receive_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_av_audio_receive_press@2x.png"; sourceTree = "<group>"; };
-		270FFB591F8C6D2400C6F62E /* icon_av_reply_message_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_av_reply_message_normal@2x.png"; sourceTree = "<group>"; };
-		270FFB5A1F8C6D2400C6F62E /* icon_av_reply_message_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_av_reply_message_press@2x.png"; sourceTree = "<group>"; };
 		270FFB5B1F8C6D2400C6F62E /* icon_avp_camera_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_camera_white@2x.png"; sourceTree = "<group>"; };
-		270FFB5C1F8C6D2400C6F62E /* icon_avp_invite_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_invite_black@2x.png"; sourceTree = "<group>"; };
-		270FFB5D1F8C6D2400C6F62E /* icon_avp_invite_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_invite_blue@2x.png"; sourceTree = "<group>"; };
-		270FFB5E1F8C6D2400C6F62E /* icon_avp_invite_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_invite_gray@2x.png"; sourceTree = "<group>"; };
-		270FFB5F1F8C6D2400C6F62E /* icon_avp_invite_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_invite_white@2x.png"; sourceTree = "<group>"; };
 		270FFB601F8C6D2400C6F62E /* icon_avp_loudspeaker_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_loudspeaker_black@2x.png"; sourceTree = "<group>"; };
 		270FFB611F8C6D2400C6F62E /* icon_avp_loudspeaker_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_loudspeaker_blue@2x.png"; sourceTree = "<group>"; };
 		270FFB621F8C6D2400C6F62E /* icon_avp_loudspeaker_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_loudspeaker_gray@2x.png"; sourceTree = "<group>"; };
@@ -106,20 +67,9 @@
 		270FFB651F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_mute_blue@2x.png"; sourceTree = "<group>"; };
 		270FFB661F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_mute_gray@2x.png"; sourceTree = "<group>"; };
 		270FFB671F8C6D2400C6F62E /* icon_avp_mute_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_mute_white@2x.png"; sourceTree = "<group>"; };
-		270FFB681F8C6D2400C6F62E /* icon_avp_reduce_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_reduce_black@2x.png"; sourceTree = "<group>"; };
-		270FFB691F8C6D2400C6F62E /* icon_avp_reduce_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_reduce_blue@2x.png"; sourceTree = "<group>"; };
-		270FFB6A1F8C6D2400C6F62E /* icon_avp_reduce_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_reduce_gray@2x.png"; sourceTree = "<group>"; };
-		270FFB6B1F8C6D2400C6F62E /* icon_avp_reduce_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_reduce_white@2x.png"; sourceTree = "<group>"; };
-		270FFB6C1F8C6D2400C6F62E /* icon_avp_video_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_video_black@2x.png"; sourceTree = "<group>"; };
-		270FFB6D1F8C6D2400C6F62E /* icon_avp_video_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_video_blue@2x.png"; sourceTree = "<group>"; };
-		270FFB6E1F8C6D2400C6F62E /* icon_avp_video_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_video_gray@2x.png"; sourceTree = "<group>"; };
-		270FFB6F1F8C6D2400C6F62E /* icon_avp_video_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_video_white@2x.png"; sourceTree = "<group>"; };
 		270FFB701F8C6D2400C6F62E /* icon_call_reject_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_call_reject_normal@2x.png"; sourceTree = "<group>"; };
 		270FFB711F8C6D2400C6F62E /* icon_call_reject_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_call_reject_press@2x.png"; sourceTree = "<group>"; };
 		270FFB721F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_skin_icon_audiocall_bg.jpg; sourceTree = "<group>"; };
-		270FFB731F8C6D2400C6F62E /* portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portrait.jpg; sourceTree = "<group>"; };
-		270FFB741F8C6D2400C6F62E /* portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portrait@2x.png"; sourceTree = "<group>"; };
-		270FFB751F8C6D2400C6F62E /* view_audio_reply_message_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "view_audio_reply_message_bg@2x.png"; sourceTree = "<group>"; };
 		270FFB771F8C6D2400C6F62E /* AVChat_busy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AVChat_busy.mp3; sourceTree = "<group>"; };
 		270FFB781F8C6D2400C6F62E /* AVChat_endCall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AVChat_endCall.mp3; sourceTree = "<group>"; };
 		270FFB791F8C6D2400C6F62E /* AVChat_incoming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AVChat_incoming.mp3; sourceTree = "<group>"; };
@@ -138,6 +88,8 @@
 		270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMRosterTableViewCell.m; sourceTree = "<group>"; };
 		270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTIMRosterTableViewCell.xib; sourceTree = "<group>"; };
 		270FFBC61F90550300C6F62E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		270FFBC81F90977A00C6F62E /* icon_audio_receive_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_audio_receive_normal@2x.png"; sourceTree = "<group>"; };
+		270FFBC91F90977A00C6F62E /* icon_audio_receive_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_audio_receive_press@2x.png"; sourceTree = "<group>"; };
 		27235CD21F8BA8DB00A15FD8 /* LTChatConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatConfig.h; sourceTree = "<group>"; };
 		27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatConfig.m; sourceTree = "<group>"; };
 		27235CD61F8BB46400A15FD8 /* LTChatXMPPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatXMPPClient.h; sourceTree = "<group>"; };
@@ -219,22 +171,9 @@
 		270FFB4F1F8C6D2400C6F62E /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				270FFB501F8C6D2400C6F62E /* 123.png */,
-				270FFB511F8C6D2400C6F62E /* 456.png */,
-				270FFB521F8C6D2400C6F62E /* call_bg@2x.png */,
-				270FFB531F8C6D2400C6F62E /* icon_audio_receive_normal@2x.png */,
-				270FFB541F8C6D2400C6F62E /* icon_audio_receive_press@2x.png */,
-				270FFB551F8C6D2400C6F62E /* icon_av_audio_micro_normal@2x.png */,
-				270FFB561F8C6D2400C6F62E /* icon_av_audio_micro_press@2x.png */,
-				270FFB571F8C6D2400C6F62E /* icon_av_audio_receive_normal@2x.png */,
-				270FFB581F8C6D2400C6F62E /* icon_av_audio_receive_press@2x.png */,
-				270FFB591F8C6D2400C6F62E /* icon_av_reply_message_normal@2x.png */,
-				270FFB5A1F8C6D2400C6F62E /* icon_av_reply_message_press@2x.png */,
+				270FFBC81F90977A00C6F62E /* icon_audio_receive_normal@2x.png */,
+				270FFBC91F90977A00C6F62E /* icon_audio_receive_press@2x.png */,
 				270FFB5B1F8C6D2400C6F62E /* icon_avp_camera_white@2x.png */,
-				270FFB5C1F8C6D2400C6F62E /* icon_avp_invite_black@2x.png */,
-				270FFB5D1F8C6D2400C6F62E /* icon_avp_invite_blue@2x.png */,
-				270FFB5E1F8C6D2400C6F62E /* icon_avp_invite_gray@2x.png */,
-				270FFB5F1F8C6D2400C6F62E /* icon_avp_invite_white@2x.png */,
 				270FFB601F8C6D2400C6F62E /* icon_avp_loudspeaker_black@2x.png */,
 				270FFB611F8C6D2400C6F62E /* icon_avp_loudspeaker_blue@2x.png */,
 				270FFB621F8C6D2400C6F62E /* icon_avp_loudspeaker_gray@2x.png */,
@@ -243,20 +182,9 @@
 				270FFB651F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png */,
 				270FFB661F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png */,
 				270FFB671F8C6D2400C6F62E /* icon_avp_mute_white@2x.png */,
-				270FFB681F8C6D2400C6F62E /* icon_avp_reduce_black@2x.png */,
-				270FFB691F8C6D2400C6F62E /* icon_avp_reduce_blue@2x.png */,
-				270FFB6A1F8C6D2400C6F62E /* icon_avp_reduce_gray@2x.png */,
-				270FFB6B1F8C6D2400C6F62E /* icon_avp_reduce_white@2x.png */,
-				270FFB6C1F8C6D2400C6F62E /* icon_avp_video_black@2x.png */,
-				270FFB6D1F8C6D2400C6F62E /* icon_avp_video_blue@2x.png */,
-				270FFB6E1F8C6D2400C6F62E /* icon_avp_video_gray@2x.png */,
-				270FFB6F1F8C6D2400C6F62E /* icon_avp_video_white@2x.png */,
 				270FFB701F8C6D2400C6F62E /* icon_call_reject_normal@2x.png */,
 				270FFB711F8C6D2400C6F62E /* icon_call_reject_press@2x.png */,
 				270FFB721F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg */,
-				270FFB731F8C6D2400C6F62E /* portrait.jpg */,
-				270FFB741F8C6D2400C6F62E /* portrait@2x.png */,
-				270FFB751F8C6D2400C6F62E /* view_audio_reply_message_bg@2x.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -474,51 +402,27 @@
 			files = (
 				270FFB8E1F8C6D2400C6F62E /* icon_avp_loudspeaker_blue@2x.png in Resources */,
 				270FFB931F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png in Resources */,
+				270FFBCA1F90977A00C6F62E /* icon_audio_receive_normal@2x.png in Resources */,
 				270FFBA31F8C6D2400C6F62E /* AVChat_busy.mp3 in Resources */,
 				270FFB9E1F8C6D2400C6F62E /* icon_call_reject_press@2x.png in Resources */,
-				270FFB961F8C6D2400C6F62E /* icon_avp_reduce_blue@2x.png in Resources */,
 				270FFB921F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png in Resources */,
-				270FFB8A1F8C6D2400C6F62E /* icon_avp_invite_blue@2x.png in Resources */,
 				270FFBA61F8C6D2400C6F62E /* AVChat_waitingForAnswer.mp3 in Resources */,
-				270FFB981F8C6D2400C6F62E /* icon_avp_reduce_white@2x.png in Resources */,
-				270FFB9C1F8C6D2400C6F62E /* icon_avp_video_white@2x.png in Resources */,
 				270FFB8D1F8C6D2400C6F62E /* icon_avp_loudspeaker_black@2x.png in Resources */,
 				270FFB901F8C6D2400C6F62E /* icon_avp_loudspeaker_white@2x.png in Resources */,
-				270FFB7D1F8C6D2400C6F62E /* 123.png in Resources */,
-				270FFB871F8C6D2400C6F62E /* icon_av_reply_message_press@2x.png in Resources */,
-				270FFB891F8C6D2400C6F62E /* icon_avp_invite_black@2x.png in Resources */,
 				270FFB8F1F8C6D2400C6F62E /* icon_avp_loudspeaker_gray@2x.png in Resources */,
 				270FFBA51F8C6D2400C6F62E /* AVChat_incoming.mp3 in Resources */,
-				270FFBA01F8C6D2400C6F62E /* portrait.jpg in Resources */,
-				270FFB851F8C6D2400C6F62E /* icon_av_audio_receive_press@2x.png in Resources */,
-				270FFB7F1F8C6D2400C6F62E /* call_bg@2x.png in Resources */,
 				270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */,
 				270FFBA81F8C6D2400C6F62E /* Message_system.mp3 in Resources */,
-				270FFBA11F8C6D2400C6F62E /* portrait@2x.png in Resources */,
-				270FFB831F8C6D2400C6F62E /* icon_av_audio_micro_press@2x.png in Resources */,
 				270FFB9F1F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg in Resources */,
-				270FFB971F8C6D2400C6F62E /* icon_avp_reduce_gray@2x.png in Resources */,
-				270FFB8C1F8C6D2400C6F62E /* icon_avp_invite_white@2x.png in Resources */,
 				270FFBC71F90550300C6F62E /* Main.storyboard in Resources */,
 				270FFB911F8C6D2400C6F62E /* icon_avp_mute_black@2x.png in Resources */,
-				270FFB801F8C6D2400C6F62E /* icon_audio_receive_normal@2x.png in Resources */,
 				270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */,
 				270FFB941F8C6D2400C6F62E /* icon_avp_mute_white@2x.png in Resources */,
-				270FFB9A1F8C6D2400C6F62E /* icon_avp_video_blue@2x.png in Resources */,
-				270FFB8B1F8C6D2400C6F62E /* icon_avp_invite_gray@2x.png in Resources */,
-				270FFB951F8C6D2400C6F62E /* icon_avp_reduce_black@2x.png in Resources */,
-				270FFB811F8C6D2400C6F62E /* icon_audio_receive_press@2x.png in Resources */,
 				270FFB3B1F8B6FDE00C6F62E /* Assets.xcassets in Resources */,
+				270FFBCB1F90977A00C6F62E /* icon_audio_receive_press@2x.png in Resources */,
 				270FFBA71F8C6D2400C6F62E /* incomingRing.wav in Resources */,
-				270FFB991F8C6D2400C6F62E /* icon_avp_video_black@2x.png in Resources */,
-				270FFB861F8C6D2400C6F62E /* icon_av_reply_message_normal@2x.png in Resources */,
 				270FFBA41F8C6D2400C6F62E /* AVChat_endCall.mp3 in Resources */,
-				270FFBA21F8C6D2400C6F62E /* view_audio_reply_message_bg@2x.png in Resources */,
-				270FFB9B1F8C6D2400C6F62E /* icon_avp_video_gray@2x.png in Resources */,
 				270FFB881F8C6D2400C6F62E /* icon_avp_camera_white@2x.png in Resources */,
-				270FFB7E1F8C6D2400C6F62E /* 456.png in Resources */,
-				270FFB821F8C6D2400C6F62E /* icon_av_audio_micro_normal@2x.png in Resources */,
-				270FFB841F8C6D2400C6F62E /* icon_av_audio_receive_normal@2x.png in Resources */,
 				270FFB9D1F8C6D2400C6F62E /* icon_call_reject_normal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,6 +627,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LTChatDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -737,6 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LTChatDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

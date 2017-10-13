@@ -24,8 +24,6 @@
 @property (assign, nonatomic)   BOOL            isHanged;
 /** 是否已接听 */
 @property (assign, nonatomic)   BOOL            answered;
-/** 对方是否开启了摄像头 */
-@property (assign, nonatomic)   BOOL            oppositeCamera;
 
 /** 头像 */
 @property (strong, nonatomic, readonly)   UIImageView             *portraitImageView;
@@ -38,7 +36,7 @@
 
 
 #pragma mark - method
-- (instancetype)initWithIsVideo:(BOOL)isVideo isCallee:(BOOL)isCallee;
+- (instancetype)initWithIsCallee:(BOOL)isCallee;
 
 - (void)show;
 

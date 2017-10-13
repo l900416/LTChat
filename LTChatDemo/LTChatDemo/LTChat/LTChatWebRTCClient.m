@@ -47,6 +47,7 @@ static LTChatWebRTCClient *_instance;
         //        [_instance.ICEServers addObject:[instance defaultSTUNServer]];
         [_instance addNotifications];
         [_instance startEngine];
+        
     });
     return _instance;
 }
@@ -82,7 +83,7 @@ static LTChatWebRTCClient *_instance;
 
 - (void)showRTCViewByRemoteName:(NSString *)remoteName isVideo:(BOOL)isVideo isCaller:(BOOL)isCaller{
     // 1.显示视图
-    self.rtcView = [[LTChatWebRTCView alloc] initWithIsVideo:isVideo isCallee:!isCaller];
+    self.rtcView = [[LTChatWebRTCView alloc] initWithIsCallee:!isCaller];
     self.rtcView.nickName = remoteName;
     self.rtcView.connectText = @"等待对方接听";
     self.rtcView.netTipText = @"网络状况良好";
