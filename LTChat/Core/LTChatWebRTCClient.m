@@ -97,9 +97,9 @@ static LTChatWebRTCClient *_instance;
     // 2.播放声音
     NSURL *audioURL;
     if (isCaller) {
-        audioURL = [[NSBundle mainBundle] URLForResource:@"AVChat_waitingForAnswer.mp3" withExtension:nil];
+        audioURL = [[NSBundle mainBundle] URLForResource:@"LTChat.bundle/Sounds/AVChat_waitingForAnswer.mp3" withExtension:nil];
     }else{
-        audioURL = [[NSBundle mainBundle] URLForResource:@"AVChat_incoming.mp3" withExtension:nil];
+        audioURL = [[NSBundle mainBundle] URLForResource:@"LTChat.bundle/Sounds/AVChat_incoming.mp3" withExtension:nil];
     }
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
     _audioPlayer.numberOfLoops = -1;

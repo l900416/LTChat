@@ -67,6 +67,16 @@
         self.callerActionView.hidden = NO;
     }
     
+    [self.bgImageView setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_bg.jpg"]];
+    
+    //给Button初始化图标
+    [self.cancelBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_reject"] forState:UIControlStateNormal];
+    [self.acceptBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_accept"] forState:UIControlStateNormal];
+    [self.rejectBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_reject"] forState:UIControlStateNormal];
+    [self.muteBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_mute"] forState:UIControlStateNormal];
+    [self.hangupBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_reject"] forState:UIControlStateNormal];
+    [self.switchBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_switch"] forState:UIControlStateNormal];
+    
     //给Button绑定事件
     [self.cancelBtn addTarget:self action:@selector(hangupClick) forControlEvents:UIControlEventTouchUpInside];
     [self.acceptBtn addTarget:self action:@selector(answerClick) forControlEvents:UIControlEventTouchUpInside];

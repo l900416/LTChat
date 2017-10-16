@@ -11,16 +11,6 @@
 		270FFB331F8B6FDE00C6F62E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFB321F8B6FDE00C6F62E /* AppDelegate.m */; };
 		270FFB3B1F8B6FDE00C6F62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB3A1F8B6FDE00C6F62E /* Assets.xcassets */; };
 		270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB3C1F8B6FDE00C6F62E /* LaunchScreen.storyboard */; };
-		270FFB881F8C6D2400C6F62E /* icon_avp_camera_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB5B1F8C6D2400C6F62E /* icon_avp_camera_white@2x.png */; };
-		270FFB911F8C6D2400C6F62E /* icon_avp_mute_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB641F8C6D2400C6F62E /* icon_avp_mute_black@2x.png */; };
-		270FFB921F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB651F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png */; };
-		270FFB931F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB661F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png */; };
-		270FFB941F8C6D2400C6F62E /* icon_avp_mute_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB671F8C6D2400C6F62E /* icon_avp_mute_white@2x.png */; };
-		270FFB9D1F8C6D2400C6F62E /* icon_call_reject_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB701F8C6D2400C6F62E /* icon_call_reject_normal@2x.png */; };
-		270FFB9E1F8C6D2400C6F62E /* icon_call_reject_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB711F8C6D2400C6F62E /* icon_call_reject_press@2x.png */; };
-		270FFB9F1F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB721F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg */; };
-		270FFBA51F8C6D2400C6F62E /* AVChat_incoming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB791F8C6D2400C6F62E /* AVChat_incoming.mp3 */; };
-		270FFBA61F8C6D2400C6F62E /* AVChat_waitingForAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB7A1F8C6D2400C6F62E /* AVChat_waitingForAnswer.mp3 */; };
 		270FFBC01F9054EF00C6F62E /* LTIMChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBAD1F9054EF00C6F62E /* LTIMChatViewController.m */; };
 		270FFBC11F9054EF00C6F62E /* LTIMChatViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBB11F9054EF00C6F62E /* LTIMChatViewModel.m */; };
 		270FFBC21F9054EF00C6F62E /* LTIMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBB61F9054EF00C6F62E /* LTIMLoginViewController.m */; };
@@ -28,13 +18,12 @@
 		270FFBC41F9054EF00C6F62E /* LTIMRosterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */; };
 		270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */; };
 		270FFBC71F90550300C6F62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC61F90550300C6F62E /* Main.storyboard */; };
-		270FFBCA1F90977A00C6F62E /* icon_audio_receive_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC81F90977A00C6F62E /* icon_audio_receive_normal@2x.png */; };
-		270FFBCB1F90977A00C6F62E /* icon_audio_receive_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC91F90977A00C6F62E /* icon_audio_receive_press@2x.png */; };
-		270FFBCD1F90A6C900C6F62E /* LTVideoChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBCC1F90A6C900C6F62E /* LTVideoChatView.xib */; };
-		270FFBD01F90A6E700C6F62E /* LTVideoChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBCF1F90A6E700C6F62E /* LTVideoChatView.m */; };
-		27235CD41F8BA8DB00A15FD8 /* LTChatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */; };
-		27235CD81F8BB46400A15FD8 /* LTChatXMPPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CD71F8BB46400A15FD8 /* LTChatXMPPClient.m */; };
-		27235CDB1F8BC80000A15FD8 /* LTChatWebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27235CDA1F8BC80000A15FD8 /* LTChatWebRTCClient.m */; };
+		27A315481F9491420016D9CA /* LTChatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A3153E1F9491420016D9CA /* LTChatConfig.m */; };
+		27A315491F9491420016D9CA /* LTChatWebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A315401F9491420016D9CA /* LTChatWebRTCClient.m */; };
+		27A3154A1F9491420016D9CA /* LTChatXMPPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A315421F9491420016D9CA /* LTChatXMPPClient.m */; };
+		27A3154B1F9491420016D9CA /* LTChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27A315431F9491420016D9CA /* LTChat.bundle */; };
+		27A3154C1F9491420016D9CA /* LTVideoChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A315461F9491420016D9CA /* LTVideoChatView.m */; };
+		27A3154D1F9491420016D9CA /* LTVideoChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A315471F9491420016D9CA /* LTVideoChatView.xib */; };
 		F1B3AFAAEDA351446636F29F /* Pods_LTChatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,16 +35,6 @@
 		270FFB3A1F8B6FDE00C6F62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270FFB3D1F8B6FDE00C6F62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270FFB3F1F8B6FDE00C6F62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		270FFB5B1F8C6D2400C6F62E /* icon_avp_camera_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_camera_white@2x.png"; sourceTree = "<group>"; };
-		270FFB641F8C6D2400C6F62E /* icon_avp_mute_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_mute_black@2x.png"; sourceTree = "<group>"; };
-		270FFB651F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_mute_blue@2x.png"; sourceTree = "<group>"; };
-		270FFB661F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_mute_gray@2x.png"; sourceTree = "<group>"; };
-		270FFB671F8C6D2400C6F62E /* icon_avp_mute_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_avp_mute_white@2x.png"; sourceTree = "<group>"; };
-		270FFB701F8C6D2400C6F62E /* icon_call_reject_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_call_reject_normal@2x.png"; sourceTree = "<group>"; };
-		270FFB711F8C6D2400C6F62E /* icon_call_reject_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_call_reject_press@2x.png"; sourceTree = "<group>"; };
-		270FFB721F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_skin_icon_audiocall_bg.jpg; sourceTree = "<group>"; };
-		270FFB791F8C6D2400C6F62E /* AVChat_incoming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AVChat_incoming.mp3; sourceTree = "<group>"; };
-		270FFB7A1F8C6D2400C6F62E /* AVChat_waitingForAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AVChat_waitingForAnswer.mp3; sourceTree = "<group>"; };
 		270FFBAC1F9054EF00C6F62E /* LTIMChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTIMChatViewController.h; sourceTree = "<group>"; };
 		270FFBAD1F9054EF00C6F62E /* LTIMChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMChatViewController.m; sourceTree = "<group>"; };
 		270FFBB01F9054EF00C6F62E /* LTIMChatViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTIMChatViewModel.h; sourceTree = "<group>"; };
@@ -68,17 +47,16 @@
 		270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMRosterTableViewCell.m; sourceTree = "<group>"; };
 		270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTIMRosterTableViewCell.xib; sourceTree = "<group>"; };
 		270FFBC61F90550300C6F62E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		270FFBC81F90977A00C6F62E /* icon_audio_receive_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_audio_receive_normal@2x.png"; sourceTree = "<group>"; };
-		270FFBC91F90977A00C6F62E /* icon_audio_receive_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_audio_receive_press@2x.png"; sourceTree = "<group>"; };
-		270FFBCC1F90A6C900C6F62E /* LTVideoChatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTVideoChatView.xib; sourceTree = "<group>"; };
-		270FFBCE1F90A6E700C6F62E /* LTVideoChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoChatView.h; sourceTree = "<group>"; };
-		270FFBCF1F90A6E700C6F62E /* LTVideoChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoChatView.m; sourceTree = "<group>"; };
-		27235CD21F8BA8DB00A15FD8 /* LTChatConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatConfig.h; sourceTree = "<group>"; };
-		27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatConfig.m; sourceTree = "<group>"; };
-		27235CD61F8BB46400A15FD8 /* LTChatXMPPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatXMPPClient.h; sourceTree = "<group>"; };
-		27235CD71F8BB46400A15FD8 /* LTChatXMPPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatXMPPClient.m; sourceTree = "<group>"; };
-		27235CD91F8BC80000A15FD8 /* LTChatWebRTCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatWebRTCClient.h; sourceTree = "<group>"; };
-		27235CDA1F8BC80000A15FD8 /* LTChatWebRTCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatWebRTCClient.m; sourceTree = "<group>"; };
+		27A3153D1F9491420016D9CA /* LTChatConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatConfig.h; sourceTree = "<group>"; };
+		27A3153E1F9491420016D9CA /* LTChatConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatConfig.m; sourceTree = "<group>"; };
+		27A3153F1F9491420016D9CA /* LTChatWebRTCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatWebRTCClient.h; sourceTree = "<group>"; };
+		27A315401F9491420016D9CA /* LTChatWebRTCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatWebRTCClient.m; sourceTree = "<group>"; };
+		27A315411F9491420016D9CA /* LTChatXMPPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatXMPPClient.h; sourceTree = "<group>"; };
+		27A315421F9491420016D9CA /* LTChatXMPPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatXMPPClient.m; sourceTree = "<group>"; };
+		27A315431F9491420016D9CA /* LTChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LTChat.bundle; sourceTree = "<group>"; };
+		27A315451F9491420016D9CA /* LTVideoChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoChatView.h; sourceTree = "<group>"; };
+		27A315461F9491420016D9CA /* LTVideoChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoChatView.m; sourceTree = "<group>"; };
+		27A315471F9491420016D9CA /* LTVideoChatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTVideoChatView.xib; sourceTree = "<group>"; };
 		399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTChatDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B9C493C6004F2751605B3A /* Pods-LTChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CE4AC64926F0AB07ED8B4CE7 /* Pods-LTChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +95,7 @@
 		270FFB2D1F8B6FDE00C6F62E /* LTChatDemo */ = {
 			isa = PBXGroup;
 			children = (
-				27235CD11F8BA8CE00A15FD8 /* LTChat */,
+				27A3153B1F9491420016D9CA /* LTChat */,
 				270FFB311F8B6FDE00C6F62E /* AppDelegate.h */,
 				270FFB321F8B6FDE00C6F62E /* AppDelegate.m */,
 				270FFBC61F90550300C6F62E /* Main.storyboard */,
@@ -136,44 +114,6 @@
 				270FFB2F1F8B6FDE00C6F62E /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		270FFB481F8C57E500C6F62E /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				270FFB4F1F8C6D2400C6F62E /* assets */,
-				270FFB761F8C6D2400C6F62E /* sound */,
-				270FFBCE1F90A6E700C6F62E /* LTVideoChatView.h */,
-				270FFBCF1F90A6E700C6F62E /* LTVideoChatView.m */,
-				270FFBCC1F90A6C900C6F62E /* LTVideoChatView.xib */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		270FFB4F1F8C6D2400C6F62E /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				270FFBC81F90977A00C6F62E /* icon_audio_receive_normal@2x.png */,
-				270FFBC91F90977A00C6F62E /* icon_audio_receive_press@2x.png */,
-				270FFB5B1F8C6D2400C6F62E /* icon_avp_camera_white@2x.png */,
-				270FFB641F8C6D2400C6F62E /* icon_avp_mute_black@2x.png */,
-				270FFB651F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png */,
-				270FFB661F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png */,
-				270FFB671F8C6D2400C6F62E /* icon_avp_mute_white@2x.png */,
-				270FFB701F8C6D2400C6F62E /* icon_call_reject_normal@2x.png */,
-				270FFB711F8C6D2400C6F62E /* icon_call_reject_press@2x.png */,
-				270FFB721F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg */,
-			);
-			path = assets;
-			sourceTree = "<group>";
-		};
-		270FFB761F8C6D2400C6F62E /* sound */ = {
-			isa = PBXGroup;
-			children = (
-				270FFB791F8C6D2400C6F62E /* AVChat_incoming.mp3 */,
-				270FFB7A1F8C6D2400C6F62E /* AVChat_waitingForAnswer.mp3 */,
-			);
-			path = sound;
 			sourceTree = "<group>";
 		};
 		270FFBA91F9054EF00C6F62E /* LTIMCore */ = {
@@ -274,18 +214,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		27235CD11F8BA8CE00A15FD8 /* LTChat */ = {
+		27A3153B1F9491420016D9CA /* LTChat */ = {
 			isa = PBXGroup;
 			children = (
-				270FFB481F8C57E500C6F62E /* UI */,
-				27235CD21F8BA8DB00A15FD8 /* LTChatConfig.h */,
-				27235CD31F8BA8DB00A15FD8 /* LTChatConfig.m */,
-				27235CD61F8BB46400A15FD8 /* LTChatXMPPClient.h */,
-				27235CD71F8BB46400A15FD8 /* LTChatXMPPClient.m */,
-				27235CD91F8BC80000A15FD8 /* LTChatWebRTCClient.h */,
-				27235CDA1F8BC80000A15FD8 /* LTChatWebRTCClient.m */,
+				27A3153C1F9491420016D9CA /* Core */,
+				27A315431F9491420016D9CA /* LTChat.bundle */,
+				27A315441F9491420016D9CA /* Views */,
 			);
 			path = LTChat;
+			sourceTree = "<group>";
+		};
+		27A3153C1F9491420016D9CA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				27A3153D1F9491420016D9CA /* LTChatConfig.h */,
+				27A3153E1F9491420016D9CA /* LTChatConfig.m */,
+				27A3153F1F9491420016D9CA /* LTChatWebRTCClient.h */,
+				27A315401F9491420016D9CA /* LTChatWebRTCClient.m */,
+				27A315411F9491420016D9CA /* LTChatXMPPClient.h */,
+				27A315421F9491420016D9CA /* LTChatXMPPClient.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		27A315441F9491420016D9CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27A315451F9491420016D9CA /* LTVideoChatView.h */,
+				27A315461F9491420016D9CA /* LTVideoChatView.m */,
+				27A315471F9491420016D9CA /* LTVideoChatView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CAAAF41445C80129710EBC8B /* Pods */ = {
@@ -366,23 +325,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270FFB931F8C6D2400C6F62E /* icon_avp_mute_gray@2x.png in Resources */,
-				270FFBCA1F90977A00C6F62E /* icon_audio_receive_normal@2x.png in Resources */,
-				270FFB9E1F8C6D2400C6F62E /* icon_call_reject_press@2x.png in Resources */,
-				270FFB921F8C6D2400C6F62E /* icon_avp_mute_blue@2x.png in Resources */,
-				270FFBA61F8C6D2400C6F62E /* AVChat_waitingForAnswer.mp3 in Resources */,
-				270FFBA51F8C6D2400C6F62E /* AVChat_incoming.mp3 in Resources */,
+				27A3154D1F9491420016D9CA /* LTVideoChatView.xib in Resources */,
 				270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */,
-				270FFB9F1F8C6D2400C6F62E /* im_skin_icon_audiocall_bg.jpg in Resources */,
 				270FFBC71F90550300C6F62E /* Main.storyboard in Resources */,
-				270FFB911F8C6D2400C6F62E /* icon_avp_mute_black@2x.png in Resources */,
-				270FFBCD1F90A6C900C6F62E /* LTVideoChatView.xib in Resources */,
+				27A3154B1F9491420016D9CA /* LTChat.bundle in Resources */,
 				270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */,
-				270FFB941F8C6D2400C6F62E /* icon_avp_mute_white@2x.png in Resources */,
 				270FFB3B1F8B6FDE00C6F62E /* Assets.xcassets in Resources */,
-				270FFBCB1F90977A00C6F62E /* icon_audio_receive_press@2x.png in Resources */,
-				270FFB881F8C6D2400C6F62E /* icon_avp_camera_white@2x.png in Resources */,
-				270FFB9D1F8C6D2400C6F62E /* icon_call_reject_normal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,16 +408,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				270FFBC11F9054EF00C6F62E /* LTIMChatViewModel.m in Sources */,
+				27A3154A1F9491420016D9CA /* LTChatXMPPClient.m in Sources */,
 				270FFBC31F9054EF00C6F62E /* LTIMRosterTableViewController.m in Sources */,
-				27235CD81F8BB46400A15FD8 /* LTChatXMPPClient.m in Sources */,
 				270FFBC41F9054EF00C6F62E /* LTIMRosterTableViewCell.m in Sources */,
-				270FFBD01F90A6E700C6F62E /* LTVideoChatView.m in Sources */,
 				270FFBC01F9054EF00C6F62E /* LTIMChatViewController.m in Sources */,
 				270FFBC21F9054EF00C6F62E /* LTIMLoginViewController.m in Sources */,
+				27A315491F9491420016D9CA /* LTChatWebRTCClient.m in Sources */,
 				270FFB331F8B6FDE00C6F62E /* AppDelegate.m in Sources */,
+				27A3154C1F9491420016D9CA /* LTVideoChatView.m in Sources */,
 				270FFB301F8B6FDE00C6F62E /* main.m in Sources */,
-				27235CD41F8BA8DB00A15FD8 /* LTChatConfig.m in Sources */,
-				27235CDB1F8BC80000A15FD8 /* LTChatWebRTCClient.m in Sources */,
+				27A315481F9491420016D9CA /* LTChatConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
