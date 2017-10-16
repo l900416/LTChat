@@ -66,7 +66,7 @@
 
 - (void)didPressAccessoryButton:(UIButton *)sender{
     LTChatWebRTCClient *client = [LTChatWebRTCClient sharedInstance];
-    [client startEngine];
+//    [client startEngine];
     client.myJID = [LTChatXMPPClient sharedInstance].xmppStream.myJID.full;
     client.remoteJID = self.chatJID.full;
     
