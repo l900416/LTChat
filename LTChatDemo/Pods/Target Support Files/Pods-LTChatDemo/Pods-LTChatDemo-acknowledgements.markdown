@@ -34,8 +34,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 ## GoogleWebRTC
 
-Webrtc
-
+# webrtc
+```
 Copyright (c) 2011, The WebRTC project authors. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -55,7 +55,7 @@ met:
     without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
 HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -135,12 +135,12 @@ base/sha1.h
 License:
 /*
  * SHA-1 in C
- * By Steve Reid <sreid@sea-to-sky.net>
+ * By Steve Reid &lt;sreid@sea-to-sky.net&gt;
  * 100% Public Domain
  *
  * -----------------
  * Modified 7/98
- * By James H. Brown <jbrown@burgoyne.com>
+ * By James H. Brown &lt;jbrown@burgoyne.com&gt;
  * Still 100% Public Domain
  *
 -------------------------------------------------------------------------------
@@ -163,13 +163,13 @@ common_audio/signal_processing/spl_sqrt_floor_arm.S
 
 License:
 /*
- * Written by Wilco Dijkstra, 1996\. The following email exchange establishes the
+ * Written by Wilco Dijkstra, 1996. The following email exchange establishes the
  * license.
  *
- * From: Wilco Dijkstra <Wilco.Dijkstra@ntlworld.com>
+ * From: Wilco Dijkstra &lt;Wilco.Dijkstra@ntlworld.com&gt;
  * Date: Fri, Jun 24, 2011 at 3:20 AM
  * Subject: Re: sqrt routine
- * To: Kevin Ma <kma@google.com>
+ * To: Kevin Ma &lt;kma@google.com&gt;
  * Hi Kevin,
  * Thanks for asking. Those routines are public domain (originally posted to
  * comp.sys.arm a long time ago), so you can use them freely for any purpose.
@@ -177,8 +177,8 @@ License:
  * Wilco
  *
  * ----- Original Message -----
- * From: "Kevin Ma" <kma@google.com>
- * To: <Wilco.Dijkstra@ntlworld.com>
+ * From: &quot;Kevin Ma&quot; &lt;kma@google.com&gt;
+ * To: &lt;Wilco.Dijkstra@ntlworld.com&gt;
  * Sent: Thursday, June 23, 2011 11:44 PM
  * Subject: Fwd: sqrt routine
  * Hi Wilco,
@@ -200,7 +200,7 @@ License:
  *
  * g711.h - In line A-law and u-law conversion routines
  *
- * Written by Steve Underwood <steveu@coppice.org>
+ * Written by Steve Underwood &lt;steveu@coppice.org&gt;
  *
  * Copyright (C) 2001 Steve Underwood
  *
@@ -221,7 +221,7 @@ License:
  *
  * g722_decode.c - The ITU G.722 codec, decode part.
  *
- * Written by Steve Underwood <steveu@coppice.org>
+ * Written by Steve Underwood &lt;steveu@coppice.org&gt;
  *
  * Copyright (C) 2005 Steve Underwood
  *
@@ -242,7 +242,7 @@ modules/audio_coding/codecs/isac/main/source/fft.c
 
 License:
 /*
- * Copyright(c)1995,97 Mark Olesen <olesen@me.QueensU.CA>
+ * Copyright(c)1995,97 Mark Olesen &lt;olesen@me.QueensU.CA&gt;
  *    Queen's Univ at Kingston (Canada)
  *
  * Permission to use, copy, modify, and distribute this software for
@@ -251,7 +251,7 @@ License:
  * or includes a copy or modification of this software and in all
  * copies of the supporting documentation for such software.
  *
- * THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR
+ * THIS SOFTWARE IS BEING PROVIDED &quot;AS IS&quot;, WITHOUT ANY EXPRESS OR
  * IMPLIED WARRANTY.  IN PARTICULAR, NEITHER THE AUTHOR NOR QUEEN'S
  * UNIVERSITY AT KINGSTON MAKES ANY REPRESENTATION OR WARRANTY OF ANY
  * KIND CONCERNING THE MERCHANTABILITY OF THIS SOFTWARE OR ITS
@@ -286,7 +286,7 @@ License:
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files
- * (the "Software"), to deal in the Software without restriction,
+ * (the &quot;Software&quot;), to deal in the Software without restriction,
  * including without limitation the rights to use, copy, modify, merge,
  * publish, distribute, sublicense, and/or sell copies of the Software,
  * and to permit persons to whom the Software is furnished to do so,
@@ -295,7 +295,7 @@ License:
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
@@ -335,7 +335,7 @@ License:
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files
- * (the "Software"), to deal in the Software without restriction,
+ * (the &quot;Software&quot;), to deal in the Software without restriction,
  * including without limitation the rights to use, copy, modify, merge,
  * publish, distribute, sublicense, and/or sell copies of the Software,
  * and to permit persons to whom the Software is furnished to do so,
@@ -344,7 +344,7 @@ License:
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
@@ -388,8 +388,8 @@ License:
 Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), DAnCE(TM),
 and CoSMIC(TM)
 
-ACE(TM), TAO(TM), CIAO(TM), DAnCE>(TM), and CoSMIC(TM) (henceforth referred to
-as "DOC software") are copyrighted by Douglas C. Schmidt and his research
+ACE(TM), TAO(TM), CIAO(TM), DAnCE&gt;(TM), and CoSMIC(TM) (henceforth referred to
+as &quot;DOC software&quot;) are copyrighted by Douglas C. Schmidt and his research
 group at Washington University, University of California, Irvine, and
 Vanderbilt University, Copyright (c) 1993-2009, all rights reserved. Since DOC
 software is open-source, freely available software, you are free to use,
@@ -413,7 +413,7 @@ The ACE, TAO, CIAO, DAnCE, and CoSMIC web sites are maintained by the DOC
 Group at the Institute for Software Integrated Systems (ISIS) and the Center
 for Distributed Object Computing of Washington University, St. Louis for the
 development of open-source software as part of the open-source software
-community. Submissions are provided by the submitter "as is" with no
+community. Submissions are provided by the submitter ``as is'' with no
 warranties whatsoever, including any warranty of merchantability,
 noninfringement of third party intellectual property, or fitness for any
 particular purpose. In no event shall the submitter be liable for any direct,
@@ -436,9 +436,9 @@ employees, or students to assist in its use, correction, modification, or
 enhancement. A number of companies around the world provide commercial support
 for DOC software, however. DOC software is Y2K-compliant, as long as the
 underlying OS platform is Y2K-compliant. Likewise, DOC software is compliant
-with the new US daylight savings rule passed by Congress as "The Energy Policy
-Act of 2005," which established new daylight savings times (DST) rules for the
-United States that expand DST as of March 2007\. Since DOC software obtains
+with the new US daylight savings rule passed by Congress as &quot;The Energy Policy
+Act of 2005,&quot; which established new daylight savings times (DST) rules for the
+United States that expand DST as of March 2007. Since DOC software obtains
 time/date and calendaring information from operating systems users will not be
 affected by the new DST rules as long as they upgrade their operating systems
 accordingly.
@@ -465,7 +465,7 @@ titled “NOTICE SPECIFIC TO SOFTWARE AVAILABLE ON THIS WEB SITE.” If you use
 such code (the “software”), you accept this license. If you do not accept the
 license, do not use the software.
 
-1\. Definitions
+1. Definitions
 
 The terms “reproduce,” “reproduction,” “derivative works,” and “distribution”
 have the same meaning here as under U.S. copyright law.
@@ -479,7 +479,7 @@ license.
 “Licensed patents” are a contributor’s patent claims that read directly on its
 contribution.
 
-2\. Grant of Rights
+2. Grant of Rights
 
 (A) Copyright Grant - Subject to the terms of this license, including the
 license conditions and limitations in section 3, each contributor grants you a
@@ -494,7 +494,7 @@ make, have made, use, sell, offer for sale, import, and/or otherwise dispose
 of its contribution in the software or derivative works of the contribution in
 the software.
 
-3\. Conditions and Limitations
+3. Conditions and Limitations
 
 (A) No Trademark License- This license does not grant you rights to use any
 contributors’ name, logo, or trademarks.
@@ -525,9 +525,10 @@ extend only to the software or derivative works that you create that run on a
 Microsoft Windows operating system product.
 
 
+```
 
-## boringssl
-
+# boringssl
+```
 BoringSSL is a fork of OpenSSL. As such, large parts of it fall under OpenSSL
 licensing. Files that are completely new have a Google copyright and an ISC
 license. This license is reproduced at the bottom of this file.
@@ -561,34 +562,34 @@ record keeping.)
  * modification, are permitted provided that the following conditions
  * are met:
  *
- * 1\. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer. 
  *
- * 2\. Redistributions in binary form must reproduce the above copyright
+ * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in
  *    the documentation and/or other materials provided with the
  *    distribution.
  *
- * 3\. All advertising materials mentioning features or use of this
+ * 3. All advertising materials mentioning features or use of this
  *    software must display the following acknowledgment:
- *    "This product includes software developed by the OpenSSL Project
- *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+ *    &quot;This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)&quot;
  *
- * 4\. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
+ * 4. The names &quot;OpenSSL Toolkit&quot; and &quot;OpenSSL Project&quot; must not be used to
  *    endorse or promote products derived from this software without
  *    prior written permission. For written permission, please contact
  *    openssl-core@openssl.org.
  *
- * 5\. Products derived from this software may not be called "OpenSSL"
- *    nor may "OpenSSL" appear in their names without prior written
+ * 5. Products derived from this software may not be called &quot;OpenSSL&quot;
+ *    nor may &quot;OpenSSL&quot; appear in their names without prior written
  *    permission of the OpenSSL Project.
  *
- * 6\. Redistributions of any form whatsoever must retain the following
+ * 6. Redistributions of any form whatsoever must retain the following
  *    acknowledgment:
- *    "This product includes software developed by the OpenSSL Project
- *    for use in the OpenSSL Toolkit (http://www.openssl.org/)"
+ *    &quot;This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit (http://www.openssl.org/)&quot;
  *
- * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT "AS IS" AND ANY
+ * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
  * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
  * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
@@ -617,40 +618,40 @@ record keeping.)
  * This package is an SSL implementation written
  * by Eric Young (eay@cryptsoft.com).
  * The implementation was written so as to conform with Netscapes SSL.
- *
+ * 
  * This library is free for commercial and non-commercial use as long as
  * the following conditions are aheared to.  The following conditions
  * apply to all code found in this distribution, be it the RC4, RSA,
  * lhash, DES, etc., code; not just the SSL code.  The SSL documentation
  * included with this distribution is covered by the same copyright terms
  * except that the holder is Tim Hudson (tjh@cryptsoft.com).
- *
+ * 
  * Copyright remains Eric Young's, and as such any Copyright notices in
  * the code are not to be removed.
  * If this package is used in a product, Eric Young should be given attribution
  * as the author of the parts of the library used.
  * This can be in the form of a textual message at program startup or
  * in documentation (online or textual) provided with the package.
- *
+ * 
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
- * 1\. Redistributions of source code must retain the copyright
+ * 1. Redistributions of source code must retain the copyright
  *    notice, this list of conditions and the following disclaimer.
- * 2\. Redistributions in binary form must reproduce the above copyright
+ * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 3\. All advertising materials mentioning features or use of this software
+ * 3. All advertising materials mentioning features or use of this software
  *    must display the following acknowledgement:
- *    "This product includes cryptographic software written by
- *     Eric Young (eay@cryptsoft.com)"
+ *    &quot;This product includes cryptographic software written by
+ *     Eric Young (eay@cryptsoft.com)&quot;
  *    The word 'cryptographic' can be left out if the rouines from the library
  *    being used are not cryptographic related :-).
- * 4\. If you include any Windows specific code (or a derivative thereof) from
+ * 4. If you include any Windows specific code (or a derivative thereof) from 
  *    the apps directory (application code) you must include an acknowledgement:
- *    "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
- *
- * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG "AS IS" AND
+ *    &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;
+ * 
+ * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
  * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
@@ -661,12 +662,13 @@ record keeping.)
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- *
+ * 
  * The licence and distribution terms for any publically available version or
  * derivative of this code cannot be changed.  i.e. this code cannot simply be
  * copied and put under another distribution licence
  * [including the GNU Public Licence.]
  */
+
 
 ISC license used for completely new code in BoringSSL:
 
@@ -676,13 +678,14 @@ ISC license used for completely new code in BoringSSL:
  * purpose with or without fee is hereby granted, provided that the above
  * copyright notice and this permission notice appear in all copies.
  *
- * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES
  * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
  * SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
  * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. */
+
 
 Some files from Intel carry the following license:
 
@@ -707,7 +710,7 @@ Some files from Intel carry the following license:
 #    this software without specific prior written permission.
 #
 #
-# THIS SOFTWARE IS PROVIDED BY INTEL CORPORATION ""AS IS"" AND ANY
+# THIS SOFTWARE IS PROVIDED BY INTEL CORPORATION &quot;&quot;AS IS&quot;&quot; AND ANY
 # EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 # IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
 # PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INTEL CORPORATION OR
@@ -719,32 +722,33 @@ Some files from Intel carry the following license:
 # NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+```
 
-## libsrtp
-
- /*
- *
+# libsrtp
+```
+/*
+ *	
  * Copyright (c) 2001-2017 Cisco Systems, Inc.
  * All rights reserved.
- *
+ * 
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
- *
+ * 
  *   Redistributions of source code must retain the above copyright
  *   notice, this list of conditions and the following disclaimer.
- *
+ * 
  *   Redistributions in binary form must reproduce the above
  *   copyright notice, this list of conditions and the following
  *   disclaimer in the documentation and/or other materials provided
  *   with the distribution.
- *
+ * 
  *   Neither the name of the Cisco Systems, Inc. nor the names of its
  *   contributors may be used to endorse or promote products derived
  *   from this software without specific prior written permission.
- *
+ * 
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
  * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  * COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
@@ -758,10 +762,10 @@ Some files from Intel carry the following license:
  *
  */
 
+```
 
-
-## libvpx
-
+# libvpx
+```
 Copyright (c) 2010, The WebM Project authors. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -782,7 +786,7 @@ met:
     permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
 HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -794,8 +798,10 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-## libyuv
+```
 
+# libyuv
+```
 Copyright 2011 The LibYuv Project Authors. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -815,7 +821,7 @@ met:
     without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
 HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -826,9 +832,10 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+```
 
-## opus
-
+# opus
+```
 Copyright 2001-2011 Xiph.Org, Skype Limited, Octasic,
                     Jean-Marc Valin, Timothy B. Terriberry,
                     CSIRO, Gregory Maxwell, Mark Borgerding,
@@ -851,7 +858,7 @@ products derived from this software without specific prior written
 permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
 OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
@@ -874,9 +881,10 @@ https://datatracker.ietf.org/ipr/1914/
 Broadcom Corporation:
 https://datatracker.ietf.org/ipr/1526/
 
+```
 
-## protobuf
-
+# protobuf
+```
 This license applies to all parts of Protocol Buffers except the following:
 
   - Atomicops support for generic gcc, located in
@@ -904,7 +912,7 @@ contributors may be used to endorse or promote products derived from
 this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
 A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
 OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -920,9 +928,10 @@ of the input file used when generating it.  This code is not
 standalone and requires a support library to be linked with it.  This
 support library is itself covered by the above license.
 
+```
 
-## usrsctp
-
+# usrsctp
+```
 (Copied from the COPYRIGHT file of
 https://code.google.com/p/sctp-refimpl/source/browse/trunk/COPYRIGHT)
 --------------------------------------------------------------------------------
@@ -936,13 +945,13 @@ Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
 are met:
 
-1\. Redistributions of source code must retain the above copyright
+1. Redistributions of source code must retain the above copyright
    notice, this list of conditions and the following disclaimer.
-2\. Redistributions in binary form must reproduce the above copyright
+2. Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in the
    documentation and/or other materials provided with the distribution.
 
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS "AS IS" AND
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
 ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
@@ -953,6 +962,8 @@ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
 OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGE.
+
+```
 
 
 
