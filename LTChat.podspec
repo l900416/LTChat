@@ -65,7 +65,7 @@ Base on XMPP framework and WebRTC framework. First release.
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios
 
   #  When using multiple platforms
   s.ios.deployment_target = "9.0"
@@ -96,7 +96,6 @@ Base on XMPP framework and WebRTC framework. First release.
 
   s.public_header_files = "LTChat/**/*.h"
 
-
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -118,9 +117,9 @@ Base on XMPP framework and WebRTC framework. First release.
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "UIKit", "Foundation"
 
-  # s.library   = "iconv"
+  # s.library   = "WebRTC"
   # s.libraries = "iconv", "xml2"
 
 
@@ -131,9 +130,22 @@ Base on XMPP framework and WebRTC framework. First release.
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
-
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+
+
+
+
   s.dependency  'XMPPFramework'
   s.dependency  'GoogleWebRTC'
+
+  s.subspec "XMPPFramework" do |ss|
+    ss.dependency "XMPPFramework"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/XMPPFramework"}
+  end
+
+  s.subspec "GoogleWebRTC" do |ss|
+    ss.dependency "GoogleWebRTC"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/GoogleWebRTC"}
+  end
 
 end
