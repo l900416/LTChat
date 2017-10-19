@@ -34,6 +34,9 @@ Pod::Spec.new do |s|
     ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/GoogleWebRTC"}
   end
 
-
+  s.subspec "KissXML" do |ss|
+    ss.dependency "KissXML"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/KissXML"}
+  end
 
 end

@@ -1,10 +1,11 @@
 # LTChat
 Chat use XMPP framework and WebRTC framework
 
-![](https://github.com/l900416/LTChat/blob/master/screenshots/1.png)
-![](https://github.com/l900416/LTChat/blob/master/screenshots/2.png)
+![](https://github.com/l900416/LTChat/blob/master/screenshots/1.PNG)
 
 ### Usage
+
+Because of the The [KissXML “Swift Language Version”](https://github.com/robbiehanson/KissXML/issues/91). Just now you should drag the code into your project .
 
 #### Setp 1 Dependent
 
