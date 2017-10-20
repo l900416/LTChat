@@ -13,12 +13,14 @@ Pod::Spec.new do |s|
   s.platform = :ios, '9.0'
   s.ios.deployment_target = "9.0"
 
-  s.source       = { :git => "https://github.com/l900416/LTChat.git", :tag => "#{s.version}" }
-  s.source_files  = "LTChat", "LTChat/**/*.{h,m}"
-  s.exclude_files = "LTChat/Exclude"
+  s.source       = { :git => "https://github.com/l900416/LTChat.git", :tag => s.version }
+  s.source_files  = "LTChat", "LTChat/**/*.{h,m}", "LTChat/*.{h,m}"
+  # s.exclude_files = "LTChat/Exclude"
 
   s.public_header_files = "LTChat/**/*.h"
   s.resources = "LTChat/LTChat.bundle","LTChat/**/*.{xib}"
+
+  s.frameworks = "Foundation", "UIKit", "CFNetwork", "CoreData", "CoreLocation", "Security", "SystemConfiguration"
 
   s.requires_arc = true
   s.dependency  'XMPPFramework'
@@ -39,4 +41,13 @@ Pod::Spec.new do |s|
     ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/KissXML"}
   end
 
+  s.subspec "CocoaAsyncSocket" do |ss|
+    ss.dependency "CocoaAsyncSocket"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/CocoaAsyncSocket"}
+  end
+
+  s.subspec "CocoaLumberjack" do |ss|
+    ss.dependency "CocoaLumberjack"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/CocoaLumberjack"}
+  end
 end
