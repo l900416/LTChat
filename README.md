@@ -1,21 +1,18 @@
 # LTChat
 Chat use XMPP framework and WebRTC framework
 
-![](https://github.com/l900416/LTChat/blob/master/screenshots/1.PNG)
 
 ### Usage
 
-Because of the The [KissXML “Swift Language Version”](https://github.com/robbiehanson/KissXML/issues/91). Just now you should drag the code into your project .
+####  Setup
 
-#### Setp 1 Dependent
-
+LTChat is available in CocoaPods, specify it in your *Podfile*:
 
 ```Objective-C
-    pod 'XMPPFramework', '~> 3.7.0'
-    pod 'GoogleWebRTC' 
+    pod ‘LTChat’ , '~> 0.0.2’
 ```
 
-#### Step 2 Configuration
+####  Configuration
 
 
 ```Objective-C
@@ -26,7 +23,7 @@ Because of the The [KissXML “Swift Language Version”](https://github.com/rob
 
 ```
 
-#### Step 3 Usage
+####  Messaging
 
 XMPP Messaging
 
@@ -61,10 +58,21 @@ WebRTC Messaging
 
 ### Upcoming features
 
- * Pod support
+ * ~~Pod support~~
  * Chat Message UI
  * Video Call UI
 
+
+### Screenshots
+
+![](https://github.com/l900416/LTChat/blob/master/screenshots/1.PNG)
+
+### Release Log
+
+ * v0.0.2
+   * **2017/10/20** Pod Support
+ * v0.0.1
+   * **2017/10/16** Project Initialization
 
 
 ## License

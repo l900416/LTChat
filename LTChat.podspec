@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "LTChat"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Chat use XMPP framework and WebRTC framework."
   s.description  = <<-DESC
   Base on XMPP framework and WebRTC framework. First release.
@@ -24,32 +24,10 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/LTChat"}
   s.requires_arc = true
-  s.dependency  'XMPPFramework'
-  s.dependency  'GoogleWebRTC'
+  s.dependency  'XMPPFramework', '~> 3.7.0'
+  s.dependency  'WebRTC', '~> 61.5.19063'
+# s.dependency  'GoogleWebRTC' #ERROR :Architectures in the fat file: WebRTC are: x86_64 armv7 arm64
 
-  s.subspec "XMPPFramework" do |ss|
-    ss.dependency "XMPPFramework"
-    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/XMPPFramework"}
-  end
-
-  s.subspec "GoogleWebRTC" do |ss|
-    ss.dependency "GoogleWebRTC"
-    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/GoogleWebRTC"}
-  end
-
-  s.subspec "KissXML" do |ss|
-    ss.dependency "KissXML"
-    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/KissXML"}
-  end
-
-  s.subspec "CocoaAsyncSocket" do |ss|
-    ss.dependency "CocoaAsyncSocket"
-    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/CocoaAsyncSocket"}
-  end
-
-  s.subspec "CocoaLumberjack" do |ss|
-    ss.dependency "CocoaLumberjack"
-    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/CocoaLumberjack"}
-  end
+# "ARCHS" => "armv7 armv7s arm64","VALID_ARCHS" => "arm64 armv7 armv7s"
 
 end
