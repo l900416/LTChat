@@ -22,12 +22,10 @@ Pod::Spec.new do |s|
 
   s.frameworks = "Foundation", "UIKit", "CFNetwork", "CoreData", "CoreLocation", "Security", "SystemConfiguration"
 
-  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/LTChat"}
   s.requires_arc = true
   s.dependency  'XMPPFramework', '~> 3.7.0'
   s.dependency  'WebRTC', '~> 61.5.19063'
 # s.dependency  'GoogleWebRTC' #ERROR :Architectures in the fat file: WebRTC are: x86_64 armv7 arm64
 
-# "ARCHS" => "armv7 armv7s arm64","VALID_ARCHS" => "arm64 armv7 armv7s"
 
 end
