@@ -7,9 +7,8 @@ target 'LTChatDemo' do
     # use_frameworks!
     
     # Pods for LTChatDemo
-    #  pod 'XMPPFramework', '~> 3.7.0'
-    #pod 'GoogleWebRTC'
+    pod 'XMPPFramework', '~> 3.7.0'
+    pod 'GoogleWebRTC'
     
-    pod 'LTChat'
     pod 'JSQMessagesViewController'
 end

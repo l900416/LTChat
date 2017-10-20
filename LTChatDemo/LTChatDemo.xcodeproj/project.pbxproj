@@ -18,6 +18,12 @@
 		270FFBC41F9054EF00C6F62E /* LTIMRosterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */; };
 		270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */; };
 		270FFBC71F90550300C6F62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC61F90550300C6F62E /* Main.storyboard */; };
+		275A85FE1F9995CE00F0F6CE /* LTChatConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A85F41F9995CE00F0F6CE /* LTChatConfig.m */; };
+		275A85FF1F9995CE00F0F6CE /* LTChatWebRTCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A85F61F9995CE00F0F6CE /* LTChatWebRTCClient.m */; };
+		275A86001F9995CE00F0F6CE /* LTChatXMPPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A85F81F9995CE00F0F6CE /* LTChatXMPPClient.m */; };
+		275A86011F9995CE00F0F6CE /* LTChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 275A85F91F9995CE00F0F6CE /* LTChat.bundle */; };
+		275A86021F9995CE00F0F6CE /* LTVideoChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A85FC1F9995CE00F0F6CE /* LTVideoChatView.m */; };
+		275A86031F9995CE00F0F6CE /* LTVideoChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275A85FD1F9995CE00F0F6CE /* LTVideoChatView.xib */; };
 		F1B3AFAAEDA351446636F29F /* Pods_LTChatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,16 @@
 		270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMRosterTableViewCell.m; sourceTree = "<group>"; };
 		270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTIMRosterTableViewCell.xib; sourceTree = "<group>"; };
 		270FFBC61F90550300C6F62E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		275A85F31F9995CE00F0F6CE /* LTChatConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatConfig.h; sourceTree = "<group>"; };
+		275A85F41F9995CE00F0F6CE /* LTChatConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatConfig.m; sourceTree = "<group>"; };
+		275A85F51F9995CE00F0F6CE /* LTChatWebRTCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatWebRTCClient.h; sourceTree = "<group>"; };
+		275A85F61F9995CE00F0F6CE /* LTChatWebRTCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatWebRTCClient.m; sourceTree = "<group>"; };
+		275A85F71F9995CE00F0F6CE /* LTChatXMPPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTChatXMPPClient.h; sourceTree = "<group>"; };
+		275A85F81F9995CE00F0F6CE /* LTChatXMPPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTChatXMPPClient.m; sourceTree = "<group>"; };
+		275A85F91F9995CE00F0F6CE /* LTChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LTChat.bundle; sourceTree = "<group>"; };
+		275A85FB1F9995CE00F0F6CE /* LTVideoChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTVideoChatView.h; sourceTree = "<group>"; };
+		275A85FC1F9995CE00F0F6CE /* LTVideoChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTVideoChatView.m; sourceTree = "<group>"; };
+		275A85FD1F9995CE00F0F6CE /* LTVideoChatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTVideoChatView.xib; sourceTree = "<group>"; };
 		399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTChatDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B9C493C6004F2751605B3A /* Pods-LTChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CE4AC64926F0AB07ED8B4CE7 /* Pods-LTChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +95,7 @@
 		270FFB2D1F8B6FDE00C6F62E /* LTChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				275A85F11F9995CE00F0F6CE /* LTChat */,
 				270FFB311F8B6FDE00C6F62E /* AppDelegate.h */,
 				270FFB321F8B6FDE00C6F62E /* AppDelegate.m */,
 				270FFBC61F90550300C6F62E /* Main.storyboard */,
@@ -197,6 +214,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		275A85F11F9995CE00F0F6CE /* LTChat */ = {
+			isa = PBXGroup;
+			children = (
+				275A85F21F9995CE00F0F6CE /* Core */,
+				275A85F91F9995CE00F0F6CE /* LTChat.bundle */,
+				275A85FA1F9995CE00F0F6CE /* Views */,
+			);
+			path = LTChat;
+			sourceTree = "<group>";
+		};
+		275A85F21F9995CE00F0F6CE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				275A85F31F9995CE00F0F6CE /* LTChatConfig.h */,
+				275A85F41F9995CE00F0F6CE /* LTChatConfig.m */,
+				275A85F51F9995CE00F0F6CE /* LTChatWebRTCClient.h */,
+				275A85F61F9995CE00F0F6CE /* LTChatWebRTCClient.m */,
+				275A85F71F9995CE00F0F6CE /* LTChatXMPPClient.h */,
+				275A85F81F9995CE00F0F6CE /* LTChatXMPPClient.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		275A85FA1F9995CE00F0F6CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				275A85FB1F9995CE00F0F6CE /* LTVideoChatView.h */,
+				275A85FC1F9995CE00F0F6CE /* LTVideoChatView.m */,
+				275A85FD1F9995CE00F0F6CE /* LTVideoChatView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CAAAF41445C80129710EBC8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,8 +326,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275A86031F9995CE00F0F6CE /* LTVideoChatView.xib in Resources */,
 				270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */,
 				270FFBC71F90550300C6F62E /* Main.storyboard in Resources */,
+				275A86011F9995CE00F0F6CE /* LTChat.bundle in Resources */,
 				270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */,
 				270FFB3B1F8B6FDE00C6F62E /* Assets.xcassets in Resources */,
 			);
@@ -357,12 +409,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				270FFBC11F9054EF00C6F62E /* LTIMChatViewModel.m in Sources */,
+				275A86001F9995CE00F0F6CE /* LTChatXMPPClient.m in Sources */,
 				270FFBC31F9054EF00C6F62E /* LTIMRosterTableViewController.m in Sources */,
 				270FFBC41F9054EF00C6F62E /* LTIMRosterTableViewCell.m in Sources */,
 				270FFBC01F9054EF00C6F62E /* LTIMChatViewController.m in Sources */,
 				270FFBC21F9054EF00C6F62E /* LTIMLoginViewController.m in Sources */,
+				275A85FF1F9995CE00F0F6CE /* LTChatWebRTCClient.m in Sources */,
 				270FFB331F8B6FDE00C6F62E /* AppDelegate.m in Sources */,
+				275A86021F9995CE00F0F6CE /* LTVideoChatView.m in Sources */,
 				270FFB301F8B6FDE00C6F62E /* main.m in Sources */,
+				275A85FE1F9995CE00F0F6CE /* LTChatConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

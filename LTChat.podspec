@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/l900416/LTChat.git", :tag => s.version }
-  s.source_files  = "LTChat", "LTChat/**/*.{h,m}", "LTChat/*.{h,m}"
+  s.source_files  = "LTChat", "LTChat/**/*.{h,m}"
   # s.exclude_files = "LTChat/Exclude"
 
   s.public_header_files = "LTChat/**/*.h"
@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = "Foundation", "UIKit", "CFNetwork", "CoreData", "CoreLocation", "Security", "SystemConfiguration"
 
+  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/LTChat"}
   s.requires_arc = true
   s.dependency  'XMPPFramework'
   s.dependency  'GoogleWebRTC'
@@ -50,4 +51,5 @@ Pod::Spec.new do |s|
     ss.dependency "CocoaLumberjack"
     ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/CocoaLumberjack"}
   end
+
 end
