@@ -13,28 +13,28 @@
 #ifndef LTCHATXMPPFramework_h
 #define LTCHATXMPPFramework_h
 
-#import "XMPP.h"
+#import <XMPPFramework/XMPP.h>
 
 //连接
-#import "XMPPReconnect.h"
-#import "XMPPAutoPing.h"
+#import <XMPPFramework/XMPPReconnect.h>
+#import <XMPPFramework/XMPPAutoPing.h>
 
 //花名册
-#import "XMPPRoster.h"
-#import "XMPPRosterMemoryStorage.h"  //遵循 XMPPRosterStorage接口
-#import "XMPPUserMemoryStorageObject.h" //遵循 XMPPUser接口
+#import <XMPPFramework/XMPPRoster.h>
+#import <XMPPFramework/XMPPRosterMemoryStorage.h>  //遵循 XMPPRosterStorage接口
+#import <XMPPFramework/XMPPUserMemoryStorageObject.h> //遵循 XMPPUser接口
 
 //聊天记录模块的导入
-#import "XMPPMessageArchiving.h"
-#import "XMPPMessageArchivingCoreDataStorage.h"
-#import "XMPPMessageArchiving_Contact_CoreDataObject.h" //最近联系人
-#import "XMPPMessageArchiving_Message_CoreDataObject.h"
+#import <XMPPFramework/XMPPMessageArchiving.h>
+#import <XMPPFramework/XMPPMessageArchivingCoreDataStorage.h>
+#import <XMPPFramework/XMPPMessageArchiving_Contact_CoreDataObject.h> //最近联系人
+#import <XMPPFramework/XMPPMessageArchiving_Message_CoreDataObject.h>
 
 //文件传输
 //接收文件
-#import "XMPPIncomingFileTransfer.h"
+#import <XMPPFramework/XMPPIncomingFileTransfer.h>
 //发送文件
-#import "XMPPOutgoingFileTransfer.h"
+#import <XMPPFramework/XMPPOutgoingFileTransfer.h>
 
 
 #endif /* LTCHATXMPPFramework_h */
