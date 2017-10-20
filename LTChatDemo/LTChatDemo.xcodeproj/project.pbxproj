@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270FFB301F8B6FDE00C6F62E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFB2F1F8B6FDE00C6F62E /* main.m */; };
+		270FFB331F8B6FDE00C6F62E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFB321F8B6FDE00C6F62E /* AppDelegate.m */; };
+		270FFB3B1F8B6FDE00C6F62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB3A1F8B6FDE00C6F62E /* Assets.xcassets */; };
+		270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFB3C1F8B6FDE00C6F62E /* LaunchScreen.storyboard */; };
+		270FFBC01F9054EF00C6F62E /* LTIMChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBAD1F9054EF00C6F62E /* LTIMChatViewController.m */; };
+		270FFBC11F9054EF00C6F62E /* LTIMChatViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBB11F9054EF00C6F62E /* LTIMChatViewModel.m */; };
+		270FFBC21F9054EF00C6F62E /* LTIMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBB61F9054EF00C6F62E /* LTIMLoginViewController.m */; };
+		270FFBC31F9054EF00C6F62E /* LTIMRosterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBBB1F9054EF00C6F62E /* LTIMRosterTableViewController.m */; };
+		270FFBC41F9054EF00C6F62E /* LTIMRosterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */; };
+		270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */; };
+		270FFBC71F90550300C6F62E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270FFBC61F90550300C6F62E /* Main.storyboard */; };
+		F1B3AFAAEDA351446636F29F /* Pods_LTChatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		270FFB2B1F8B6FDE00C6F62E /* LTChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		270FFB2F1F8B6FDE00C6F62E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		270FFB311F8B6FDE00C6F62E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		270FFB321F8B6FDE00C6F62E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		270FFB3A1F8B6FDE00C6F62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		270FFB3D1F8B6FDE00C6F62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		270FFB3F1F8B6FDE00C6F62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270FFBAC1F9054EF00C6F62E /* LTIMChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTIMChatViewController.h; sourceTree = "<group>"; };
+		270FFBAD1F9054EF00C6F62E /* LTIMChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMChatViewController.m; sourceTree = "<group>"; };
+		270FFBB01F9054EF00C6F62E /* LTIMChatViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTIMChatViewModel.h; sourceTree = "<group>"; };
+		270FFBB11F9054EF00C6F62E /* LTIMChatViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMChatViewModel.m; sourceTree = "<group>"; };
+		270FFBB51F9054EF00C6F62E /* LTIMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTIMLoginViewController.h; sourceTree = "<group>"; };
+		270FFBB61F9054EF00C6F62E /* LTIMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMLoginViewController.m; sourceTree = "<group>"; };
+		270FFBBA1F9054EF00C6F62E /* LTIMRosterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTIMRosterTableViewController.h; sourceTree = "<group>"; };
+		270FFBBB1F9054EF00C6F62E /* LTIMRosterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMRosterTableViewController.m; sourceTree = "<group>"; };
+		270FFBBD1F9054EF00C6F62E /* LTIMRosterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTIMRosterTableViewCell.h; sourceTree = "<group>"; };
+		270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTIMRosterTableViewCell.m; sourceTree = "<group>"; };
+		270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTIMRosterTableViewCell.xib; sourceTree = "<group>"; };
+		270FFBC61F90550300C6F62E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTChatDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B9C493C6004F2751605B3A /* Pods-LTChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CE4AC64926F0AB07ED8B4CE7 /* Pods-LTChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270FFB281F8B6FDE00C6F62E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B3AFAAEDA351446636F29F /* Pods_LTChatDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270FFB221F8B6FDE00C6F62E = {
+			isa = PBXGroup;
+			children = (
+				270FFB2D1F8B6FDE00C6F62E /* LTChatDemo */,
+				270FFB2C1F8B6FDE00C6F62E /* Products */,
+				CAAAF41445C80129710EBC8B /* Pods */,
+				F011B397765B924B59E82864 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		270FFB2C1F8B6FDE00C6F62E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				270FFB2B1F8B6FDE00C6F62E /* LTChatDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		270FFB2D1F8B6FDE00C6F62E /* LTChatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				270FFB311F8B6FDE00C6F62E /* AppDelegate.h */,
+				270FFB321F8B6FDE00C6F62E /* AppDelegate.m */,
+				270FFBC61F90550300C6F62E /* Main.storyboard */,
+				270FFBA91F9054EF00C6F62E /* LTIMCore */,
+				270FFB3A1F8B6FDE00C6F62E /* Assets.xcassets */,
+				270FFB3C1F8B6FDE00C6F62E /* LaunchScreen.storyboard */,
+				270FFB3F1F8B6FDE00C6F62E /* Info.plist */,
+				270FFB2E1F8B6FDE00C6F62E /* Supporting Files */,
+			);
+			path = LTChatDemo;
+			sourceTree = "<group>";
+		};
+		270FFB2E1F8B6FDE00C6F62E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				270FFB2F1F8B6FDE00C6F62E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		270FFBA91F9054EF00C6F62E /* LTIMCore */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBAA1F9054EF00C6F62E /* Chat */,
+				270FFBB31F9054EF00C6F62E /* Login */,
+				270FFBB81F9054EF00C6F62E /* Roster */,
+			);
+			path = LTIMCore;
+			sourceTree = "<group>";
+		};
+		270FFBAA1F9054EF00C6F62E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBAB1F9054EF00C6F62E /* Controllers */,
+				270FFBAE1F9054EF00C6F62E /* View */,
+				270FFBAF1F9054EF00C6F62E /* ViewModel */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		270FFBAB1F9054EF00C6F62E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBAC1F9054EF00C6F62E /* LTIMChatViewController.h */,
+				270FFBAD1F9054EF00C6F62E /* LTIMChatViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		270FFBAE1F9054EF00C6F62E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		270FFBAF1F9054EF00C6F62E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBB01F9054EF00C6F62E /* LTIMChatViewModel.h */,
+				270FFBB11F9054EF00C6F62E /* LTIMChatViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		270FFBB31F9054EF00C6F62E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBB41F9054EF00C6F62E /* Controllers */,
+				270FFBB71F9054EF00C6F62E /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		270FFBB41F9054EF00C6F62E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBB51F9054EF00C6F62E /* LTIMLoginViewController.h */,
+				270FFBB61F9054EF00C6F62E /* LTIMLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		270FFBB71F9054EF00C6F62E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		270FFBB81F9054EF00C6F62E /* Roster */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBB91F9054EF00C6F62E /* Controllers */,
+				270FFBBC1F9054EF00C6F62E /* View */,
+			);
+			path = Roster;
+			sourceTree = "<group>";
+		};
+		270FFBB91F9054EF00C6F62E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBBA1F9054EF00C6F62E /* LTIMRosterTableViewController.h */,
+				270FFBBB1F9054EF00C6F62E /* LTIMRosterTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		270FFBBC1F9054EF00C6F62E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				270FFBBD1F9054EF00C6F62E /* LTIMRosterTableViewCell.h */,
+				270FFBBE1F9054EF00C6F62E /* LTIMRosterTableViewCell.m */,
+				270FFBBF1F9054EF00C6F62E /* LTIMRosterTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAAAF41445C80129710EBC8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AC64926F0AB07ED8B4CE7 /* Pods-LTChatDemo.debug.xcconfig */,
+				85B9C493C6004F2751605B3A /* Pods-LTChatDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F011B397765B924B59E82864 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				399AACAC7827EA70A56914D9 /* Pods_LTChatDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		270FFB2A1F8B6FDE00C6F62E /* LTChatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270FFB421F8B6FDE00C6F62E /* Build configuration list for PBXNativeTarget "LTChatDemo" */;
+			buildPhases = (
+				A321839451018C4BD325FFCE /* [CP] Check Pods Manifest.lock */,
+				270FFB271F8B6FDE00C6F62E /* Sources */,
+				270FFB281F8B6FDE00C6F62E /* Frameworks */,
+				270FFB291F8B6FDE00C6F62E /* Resources */,
+				0F75A9B8EC15F42C8E5DC28E /* [CP] Embed Pods Frameworks */,
+				C2019E0BCF5657AFE6A2E4C2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTChatDemo;
+			productName = LTChatDemo;
+			productReference = 270FFB2B1F8B6FDE00C6F62E /* LTChatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		270FFB231F8B6FDE00C6F62E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "梁通";
+				TargetAttributes = {
+					270FFB2A1F8B6FDE00C6F62E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = U4Y5XJ6M4W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 270FFB261F8B6FDE00C6F62E /* Build configuration list for PBXProject "LTChatDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 270FFB221F8B6FDE00C6F62E;
+			productRefGroup = 270FFB2C1F8B6FDE00C6F62E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				270FFB2A1F8B6FDE00C6F62E /* LTChatDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		270FFB291F8B6FDE00C6F62E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270FFBC51F9054EF00C6F62E /* LTIMRosterTableViewCell.xib in Resources */,
+				270FFBC71F90550300C6F62E /* Main.storyboard in Resources */,
+				270FFB3E1F8B6FDE00C6F62E /* LaunchScreen.storyboard in Resources */,
+				270FFB3B1F8B6FDE00C6F62E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F75A9B8EC15F42C8E5DC28E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
+				"${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMPPFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A321839451018C4BD325FFCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTChatDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2019E0BCF5657AFE6A2E4C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTChatDemo/Pods-LTChatDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		270FFB271F8B6FDE00C6F62E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270FFBC11F9054EF00C6F62E /* LTIMChatViewModel.m in Sources */,
+				270FFBC31F9054EF00C6F62E /* LTIMRosterTableViewController.m in Sources */,
+				270FFBC41F9054EF00C6F62E /* LTIMRosterTableViewCell.m in Sources */,
+				270FFBC01F9054EF00C6F62E /* LTIMChatViewController.m in Sources */,
+				270FFBC21F9054EF00C6F62E /* LTIMLoginViewController.m in Sources */,
+				270FFB331F8B6FDE00C6F62E /* AppDelegate.m in Sources */,
+				270FFB301F8B6FDE00C6F62E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		270FFB3C1F8B6FDE00C6F62E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270FFB3D1F8B6FDE00C6F62E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		270FFB401F8B6FDE00C6F62E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		270FFB411F8B6FDE00C6F62E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		270FFB431F8B6FDE00C6F62E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4AC64926F0AB07ED8B4CE7 /* Pods-LTChatDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				DEVELOPMENT_TEAM = U4Y5XJ6M4W;
+				INFOPLIST_FILE = LTChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eep.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		270FFB441F8B6FDE00C6F62E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B9C493C6004F2751605B3A /* Pods-LTChatDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				DEVELOPMENT_TEAM = U4Y5XJ6M4W;
+				INFOPLIST_FILE = LTChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eep.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270FFB261F8B6FDE00C6F62E /* Build configuration list for PBXProject "LTChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270FFB401F8B6FDE00C6F62E /* Debug */,
+				270FFB411F8B6FDE00C6F62E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270FFB421F8B6FDE00C6F62E /* Build configuration list for PBXNativeTarget "LTChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270FFB431F8B6FDE00C6F62E /* Debug */,
+				270FFB441F8B6FDE00C6F62E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 270FFB231F8B6FDE00C6F62E /* Project object */;
+}
