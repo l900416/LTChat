@@ -1,0 +1,6 @@
+framework module LTChat {
+  umbrella header "LTChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

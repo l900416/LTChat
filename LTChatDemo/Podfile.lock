@@ -1,0 +1,38 @@
+PODS:
+  - CocoaAsyncSocket (7.6.1)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - KissXML (5.2.0)
+  - LTChat (0.0.2):
+    - WebRTC (~> 61.5.19063)
+    - XMPPFramework (~> 3.7.0)
+  - WebRTC (61.5.19063)
+  - XMPPFramework (3.7.0):
+    - CocoaAsyncSocket (~> 7.6.0)
+    - CocoaLumberjack
+    - KissXML (~> 5.2.0)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - LTChat
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  KissXML: 1c1eeeb6b94e4522cd2f2373e5d0d03c9227738f
+  LTChat: 9749a25bb3713347793a588f32641ca538681a14
+  WebRTC: 141474ba648e0b940a70696c183451b4a3b2b10f
+  XMPPFramework: 6f99ad1afcdb0cdbec7192a8e4c542c3fc3de6f8
+
+PODFILE CHECKSUM: 6d72910ba97e3c0b70306a84149bb0faf1bffe88
+
+COCOAPODS: 1.4.0.beta.1
