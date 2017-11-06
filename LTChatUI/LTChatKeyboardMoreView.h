@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "LTChatUIConfig.h"
 
-
 #define kLTKeyboardMoreItem_COL 4
 #define kLTKeyboardMoreItem_ROW 2
 

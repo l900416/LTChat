@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LTChatKeyboardViewToolbar.h"//工具键盘
+#import "LTChatKeyboardFaceView.h"//表情键盘
 #import "LTChatKeyboardMoreView.h"//更多键盘
 
 
@@ -26,9 +27,9 @@
 //键盘工具区，包含声音、文本框、表情、更多功能键
 @property (nonatomic, strong) LTChatKeyboardViewToolbar* toolbar;
 
-
+//表情键盘
+@property (nonatomic, strong) LTChatKeyboardFaceView* faceKeyboard;
 
 //更多功能键盘
 @property (nonatomic, strong) LTChatKeyboardMoreView* moreKeyboard;
-
 @end

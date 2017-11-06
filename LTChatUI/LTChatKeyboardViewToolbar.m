@@ -9,7 +9,7 @@
 #import "LTChatKeyboardViewToolbar.h"
 
 
-@interface LTChatKeyboardViewToolbar()
+@interface LTChatKeyboardViewToolbar()<UITextViewDelegate>
 
 //文本框高度
 @property (nonatomic, strong) NSLayoutConstraint* textHeightConstraint;
@@ -48,6 +48,7 @@
     self.layer.borderWidth = 0.7f;
     self.clipsToBounds = YES;
     
+    
     // Add Constant - 添加约束
     //Voice Button Constant - 在工具栏左下位置
     [self pinSubview:self.voiceBtn toEdge:NSLayoutAttributeLeading withConstant:-LTChatKeyboardPadding];//Leading
@@ -60,6 +61,7 @@
     [self pinSubview:self.textView attribute:NSLayoutAttributeLeading subView:self.voiceBtn attribute:NSLayoutAttributeTrailing constant:LTChatKeyboardPadding];//Leading
     [self pinSubview:self.textView toEdge:NSLayoutAttributeBottom withConstant:LTChatKeyboardPadding];//Bottom
     [self pinSubview:self.textView attribute:NSLayoutAttributeTrailing subView:self.emojiBtn attribute:NSLayoutAttributeLeading constant:-LTChatKeyboardPadding];//Trailing
+    self.textView.delegate = self;
     
     //Voice Input Button - 与文本框相同
     [self pinSubview:self.voiceInputBtn attribute:NSLayoutAttributeLeading subView:self.textView attribute:NSLayoutAttributeLeading constant:0];//Leading
@@ -109,16 +111,10 @@
         _emojiBtn.tag = 1 - _emojiBtn.tag;
         _voiceBtn.tag = 0;
         _moreBtn.tag = 0;
-        if(_emojiBtn.tag == 0){
-            [[NSNotificationCenter defaultCenter] postNotificationName:kLTChatUIKeyboardEmojiKeyboardHideKey object:nil];
-        }
     }else if([btn isEqual:_moreBtn]){
         _moreBtn.tag = 1 - _moreBtn.tag;
         _voiceBtn.tag = 0;
         _emojiBtn.tag = 0;
-        if(_moreBtn.tag == 0){
-            [[NSNotificationCenter defaultCenter] postNotificationName:kLTChatUIKeyboardMoreKeyboardHideKey object:nil];
-        }
     }
     
     if (_voiceBtn.tag == 0 && _emojiBtn.tag == 0 && _moreBtn.tag == 0) {//CASE 1 : 普通模式
@@ -129,6 +125,7 @@
         _textView.hidden = YES;
         _voiceInputBtn.hidden = NO;
         [_textView resignFirstResponder];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLTChatUIKeyboardMoreKeyboardHideKey object:nil];
     }else if (_voiceBtn.tag == 0 && _emojiBtn.tag == 1 && _moreBtn.tag == 0) {//CASE 3 : 表情符号模式
         _textView.hidden = NO;
         _voiceInputBtn.hidden = YES;
@@ -140,6 +137,10 @@
         [_textView resignFirstResponder];
         [[NSNotificationCenter defaultCenter] postNotificationName:kLTChatUIKeyboardMoreKeyboardShowKey object:nil];
     }
+    
+    NSLog(@"======= Button TAG =======");
+    NSLog(@"\nVoice:%td\nEmoji:%td\nMore:%td",_voiceBtn.tag,_emojiBtn.tag,_moreBtn.tag);
+    NSLog(@"======= Button TAG =======");
     [self updateVoiceAndEmojiBtn];
 }
 
@@ -159,6 +160,15 @@
         [_emojiBtn setImage:[UIImage imageNamed:@"LTChatUI.bundle/Images/ic_chatBar_keyboard"] forState:UIControlStateNormal];
         [_emojiBtn setImage:[UIImage imageNamed:@"LTChatUI.bundle/Images/ic_chatBar_keyboard_selected"] forState:UIControlStateNormal];
     }
+}
+
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+    //输入框成为焦点的时候，设置为模式一
+    _voiceBtn.tag = 0;
+    _emojiBtn.tag = 0;
+    _moreBtn.tag = 0;
+    [self updateVoiceAndEmojiBtn];
+    return YES;
 }
 
 //声音按钮。

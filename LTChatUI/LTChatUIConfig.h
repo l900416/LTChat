@@ -16,7 +16,13 @@
 #define LTChatKeyboardPadding   8
 
 
-#define LTChatKeyboardMoreViewHeight 214
+#define LTChatKeyboardFaceViewHeight 204
+#define LTChatKeyboardFaceViewToolHeight 36
+
+#define LTChatKeyboardMoreViewHeight 204
+
+//颜色
+#define LTChatKeyboardViewBackgroundColor   [UIColor whiteColor]
 
 //展示表情键盘
 #define kLTChatUIKeyboardEmojiKeyboardShowKey          @"kLTChatUIKeyboardEmojiKeyboardShowKey"

@@ -9,8 +9,6 @@
 #import "LTChatKeyboardMoreView.h"
 #import "LTChatKeyboardMoreCollectionViewCell.h"
 
-
-
 @interface LTChatKeyboardMoreView()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView* collectionView;
@@ -48,6 +46,7 @@ static NSString* LTChatKeyboardMoreCollectionViewCellIdentifier = @"LTChatKeyboa
 
 -(void)setupInitialization{
     self.translatesAutoresizingMaskIntoConstraints = NO;
+    self.backgroundColor = LTChatKeyboardViewBackgroundColor;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
@@ -62,7 +61,7 @@ static NSString* LTChatKeyboardMoreCollectionViewCellIdentifier = @"LTChatKeyboa
     
     [self pinSubview:self.collectionView toEdge:NSLayoutAttributeTop];//Top
     [self pinSubview:self.collectionView toEdge:NSLayoutAttributeLeading];//Leading
-    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeBottom];//Bottom
+    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeBottom withConstant:LTChatKeyboardPadding * 3];//Bottom
     [self pinSubview:self.collectionView toEdge:NSLayoutAttributeTrailing];//Trailing
     
     _pageControl = [[UIPageControl alloc] init];
@@ -80,7 +79,7 @@ static NSString* LTChatKeyboardMoreCollectionViewCellIdentifier = @"LTChatKeyboa
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat collectionViewWidth = collectionView.frame.size.width;
     CGFloat cellWidth = collectionViewWidth / kLTKeyboardMoreItem_COL;
-    CGFloat cellHeiht = LTChatKeyboardMoreViewHeight / kLTKeyboardMoreItem_ROW;
+    CGFloat cellHeiht = (LTChatKeyboardMoreViewHeight - LTChatKeyboardPadding * 3) / kLTKeyboardMoreItem_ROW;
     return CGSizeMake(cellWidth, cellHeiht);
 }
 
