@@ -79,10 +79,13 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
     self.collectionView.backgroundColor = [UIColor clearColor];
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
-    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeLeading withConstant:-LTChatKeyboardPadding * 2];//Leading
-    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeBottom withConstant:LTChatKeyboardPadding];//Bottom
-    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeTrailing withConstant:LTChatKeyboardPadding * 2];//Trailing
+    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeLeading];//Leading
+    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeBottom];//Bottom
+    [self pinSubview:self.collectionView toEdge:NSLayoutAttributeTrailing];//Trailing
     [self pinSubview:self.collectionView withAttribute:NSLayoutAttributeHeight constant:LTChatKeyboardFaceViewToolHeight];//height
+    
+    
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
     
     
     _selectedIndex = 0;
@@ -92,7 +95,7 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
 #pragma mark - UICollectionViewFlowLayoutDelegate
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(LTChatKeyboardFaceViewToolHeight * 1.2, LTChatKeyboardFaceViewToolHeight);
+    return CGSizeMake(LTChatKeyboardFaceViewToolHeight * 1.3, LTChatKeyboardFaceViewToolHeight);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {

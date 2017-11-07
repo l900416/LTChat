@@ -65,7 +65,8 @@ WebRTC Messaging
 
 ### Screenshots
 
-![](https://github.com/l900416/LTChat/blob/master/screenshots/1.PNG)
+![](https://github.com/l900416/LTChat/blob/master/screenshots/keyboard-1.png)
+![](https://github.com/l900416/LTChat/blob/master/screenshots/realtime-1.png)
 
 ### Release Log
 

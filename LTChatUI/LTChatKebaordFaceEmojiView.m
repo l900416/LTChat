@@ -72,7 +72,6 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
     _pageControl.currentPageIndicatorTintColor = [UIColor darkGrayColor];
     _pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     
-    
     _pageControl.hidden = YES;
 }
 #pragma mark - UICollectionViewFlowLayoutDelegate
@@ -121,36 +120,55 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
     }
 }
 
-//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-//    //获取最新的CollectionViewCell
-//    int page = (int)(scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % 5;
-//    self.pageControl.currentPage = page;
-//
-//    NSInteger index = page * kLTKeyboardFaceEmojiItem_ROW * kLTKeyboardFaceEmojiItem_COL;
-//    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
-//    });
-//}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSArray* visibleCells = [self.collectionView.indexPathsForVisibleItems sortedArrayUsingComparator:^NSComparisonResult(NSIndexPath* obj1, NSIndexPath* obj2) {
+        NSInteger row1 = obj1.row;
+        NSInteger row2 = obj2.row;
+        if (row1 >= row2) {
+            return NSOrderedDescending;
+        }
+        return NSOrderedAscending;
+    }];
+    NSInteger firstVisibleIndex =((NSIndexPath*)(visibleCells.firstObject)).row;
+    NSInteger countPerPage = kLTKeyboardFaceEmojiItem_ROW * kLTKeyboardFaceEmojiItem_COL;
+    NSInteger page = firstVisibleIndex / countPerPage;
+    self.pageControl.currentPage = page;
 
-//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-//    if (!decelerate) {
-//        int page = (int)(scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % 5;
-//        self.pageControl.currentPage = page;
-//
-//        NSInteger index = page * kLTKeyboardFaceEmojiItem_ROW * kLTKeyboardFaceEmojiItem_COL;
-//        NSIndexPath* indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
-//        });
-//    }
-//}
+    NSInteger index = page * countPerPage;
+    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+    });
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    if (!decelerate) {
+        NSArray* visibleCells = [self.collectionView.indexPathsForVisibleItems sortedArrayUsingComparator:^NSComparisonResult(NSIndexPath* obj1, NSIndexPath* obj2) {
+            NSInteger row1 = obj1.row;
+            NSInteger row2 = obj2.row;
+            if (row1 >= row2) {
+                return NSOrderedDescending;
+            }
+            return NSOrderedAscending;
+        }];
+        NSInteger firstVisibleIndex =((NSIndexPath*)(visibleCells.firstObject)).row;
+        NSInteger countPerPage = kLTKeyboardFaceEmojiItem_ROW * kLTKeyboardFaceEmojiItem_COL;
+        NSInteger page = firstVisibleIndex / countPerPage;
+        self.pageControl.currentPage = page;
+        
+        NSInteger index = page * countPerPage;
+        NSIndexPath* indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+        });
+    }
+}
 
 #pragma mark - Action
 -(void)reloadEmojis{
     NSInteger count = [self.delegate numberOfEmojis];
         self.pageControl.numberOfPages = count / (kLTKeyboardFaceEmojiItem_ROW * kLTKeyboardFaceEmojiItem_COL) + 1;
-    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
     [self.collectionView reloadData];
 }
 @end
