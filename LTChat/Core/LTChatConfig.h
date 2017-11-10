@@ -133,11 +133,11 @@
  * WebRTC通信用
  **/
 // Call
-@property (nonatomic, strong) NSString* webrtcCall;
+//@property (nonatomic, strong) NSString* webrtcCall;
 // Cancel
 @property (nonatomic, strong) NSString* webrtcCancel;
 // Accept
-@property (nonatomic, strong) NSString* webrtcAccept;
+//@property (nonatomic, strong) NSString* webrtcAccept;
 // Reject
 @property (nonatomic, strong) NSString* webrtcReject;
 // Stop

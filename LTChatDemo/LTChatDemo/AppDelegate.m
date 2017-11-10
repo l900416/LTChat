@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LTChatConfig.h"
-
+#import "LTChatWebRTCClient.h"
 @interface AppDelegate ()
 
 @end
@@ -23,6 +23,8 @@
     [LTChatConfig sharedInstance].xmppPort = 8810;
     [LTChatConfig sharedInstance].xmppDomain = @"ms-linuxuat";
     [LTChatConfig sharedInstance].xmppResource = @"iOS";
+    
+    [[LTChatWebRTCClient sharedInstance] startEngine];
     return YES;
 }
 

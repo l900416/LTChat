@@ -84,7 +84,7 @@ static LTChatWebRTCClient *_instance;
 - (void)showRTCViewByRemoteName:(NSString *)remoteName isVideo:(BOOL)isVideo isCaller:(BOOL)isCaller{
     // 1.显示视图
     
-    NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"LTVideoChatView" owner:nil options:nil];
+    NSArray *nibContents = [[NSBundle bundleForClass:self.class] loadNibNamed:@"LTVideoChatView" owner:nil options:nil];
     LTVideoChatView* videoChatView = [nibContents lastObject];
     [videoChatView setupWithIsCallee:!isCaller];
     
@@ -97,9 +97,9 @@ static LTChatWebRTCClient *_instance;
     // 2.播放声音
     NSURL *audioURL;
     if (isCaller) {
-        audioURL = [[NSBundle mainBundle] URLForResource:@"LTChat.bundle/Sounds/AVChat_waitingForAnswer.mp3" withExtension:nil];
+        audioURL = [[NSBundle bundleForClass:self.class] URLForResource:@"LTChat.bundle/Sounds/AVChat_waitingForAnswer.mp3" withExtension:nil];
     }else{
-        audioURL = [[NSBundle mainBundle] URLForResource:@"LTChat.bundle/Sounds/AVChat_incoming.mp3" withExtension:nil];
+        audioURL = [[NSBundle bundleForClass:self.class] URLForResource:@"LTChat.bundle/Sounds/AVChat_incoming.mp3" withExtension:nil];
     }
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL error:nil];
     _audioPlayer.numberOfLoops = -1;
@@ -114,12 +114,10 @@ static LTChatWebRTCClient *_instance;
     
     // 5.做RTC必要设置
     if (isCaller) {
-        //在开启webRTC通话前，发送消息
-        [self processMessageDict:@{@"type":[LTChatConfig sharedInstance].webrtcCall}];
-    } else {
+        [self startWebRTCCaller];
+    }else {
         // 如果是接收者，就要处理信令信息，创建一个answer
         NSLog(@"如果是接收者，就要处理信令信息");
-//        self.rtcView.connectText = isVideo ? @"视频通话":@"语音通话";
     }
 }
 
@@ -133,7 +131,9 @@ static LTChatWebRTCClient *_instance;
         } else {
             NSLog(@"创建SessionDescription 成功");
             [self.peerConnection setLocalDescription:sdp completionHandler:^(NSError * _Nullable error) {
-                
+                if (error) {
+                    NSLog(@"error:%s",__func__);
+                }
             }];
             NSString* type = [RTCSessionDescription stringForType:sdp.type];
             NSDictionary *jsonDict = @{ @"type" : type, @"sdp" : sdp.sdp };
@@ -265,8 +265,15 @@ static LTChatWebRTCClient *_instance;
         RTCSessionDescription *sdp = [[RTCSessionDescription alloc] initWithType:RTCSdpTypeAnswer sdp:dict[@"sdp"]];
         //        [self.peerConnection setRemoteDescriptionWithDelegate:self sessionDescription:sdp];
         [self.peerConnection setRemoteDescription:sdp completionHandler:^(NSError * _Nullable error) {
-            
+            if (error) {
+                NSLog(@"error:%s",__func__);
+            }
         }];
+        self.rtcView.answered = YES;
+        if ([_audioPlayer isPlaying]) {
+            [_audioPlayer stop];
+        }
+        
     } else if ([type isEqualToString:@"candidate"]) {
         
         [self.messages addObject:dict];
@@ -274,10 +281,6 @@ static LTChatWebRTCClient *_instance;
         NSLog(@"接收到了挂断／拒绝的消息，则直接发送停止的消息给对方");
         //        [self processMessageDict:dict];
         [self processMessageDict:@{@"type":[LTChatConfig sharedInstance].webrtcStop}];
-    }else if ([type isEqualToString:[LTChatConfig sharedInstance].webrtcCall]){
-        [self processMessageDict:@{@"type":[LTChatConfig sharedInstance].webrtcAccept}];
-    }else if ([type isEqualToString:[LTChatConfig sharedInstance].webrtcAccept]){
-        [self startWebRTCCaller];
     }
 }
 
@@ -304,6 +307,9 @@ static LTChatWebRTCClient *_instance;
         RTCSessionDescription *remoteSdp = [[RTCSessionDescription alloc] initWithType:RTCSdpTypeOffer sdp:dict[@"sdp"]];
         __weak __typeof(self) weakSelf = self;
         [self.peerConnection setRemoteDescription:remoteSdp completionHandler:^(NSError * error) {
+            if (error) {
+                NSLog(@"error:%s",__func__);
+            }
             __strong __typeof(weakSelf)strongSelf = weakSelf;
             [strongSelf.peerConnection answerForConstraints:strongSelf.sdpConstraints completionHandler:^(RTCSessionDescription * _Nullable sdp, NSError * _Nullable error) {
                 if (error) {
@@ -311,7 +317,9 @@ static LTChatWebRTCClient *_instance;
                 } else {
                     NSLog(@"创建SessionDescription 成功");
                     [strongSelf.peerConnection setLocalDescription:sdp completionHandler:^(NSError * _Nullable error) {
-                        
+                        if (error) {
+                            NSLog(@"error:%s",__func__);
+                        }
                     }];
                     NSString* type = [RTCSessionDescription stringForType:sdp.type];
                     NSDictionary *jsonDict = @{ @"type" : type, @"sdp" : sdp.sdp };
@@ -327,7 +335,9 @@ static LTChatWebRTCClient *_instance;
     } else if ([type isEqualToString:@"answer"]) {
         RTCSessionDescription *remoteSdp = [[RTCSessionDescription alloc] initWithType:RTCSdpTypeAnswer sdp:dict[@"sdp"]];
         [self.peerConnection setRemoteDescription:remoteSdp completionHandler:^(NSError * _Nullable error) {
-            
+            if (error) {
+                NSLog(@"error:%s",__func__);
+            }
         }];
         
     } else if ([type isEqualToString:@"candidate"]) {
@@ -351,13 +361,6 @@ static LTChatWebRTCClient *_instance;
             [self.rtcView dismiss];
             
             [self cleanCache];
-        }
-    }else if ([type isEqualToString:[LTChatConfig sharedInstance].webrtcCall] || [type isEqualToString:[LTChatConfig sharedInstance].webrtcAccept]){
-        
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];
-        NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-        if (jsonStr.length > 0) {
-            [[LTChatXMPPClient sharedInstance] sendSignalingMessage:jsonStr toUser:self.remoteJID];
         }
     }
 }

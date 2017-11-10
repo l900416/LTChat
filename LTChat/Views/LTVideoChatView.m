@@ -67,15 +67,17 @@
         self.callerActionView.hidden = NO;
     }
     
-    [self.bgImageView setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_bg.jpg"]];
+    NSBundle* selfBundle = [NSBundle bundleForClass:self.class];
+    
+    [self.bgImageView setImage:[UIImage imageWithContentsOfFile: [selfBundle pathForResource:@"LTChat.bundle/Images/ic_bg" ofType:@"jpg"]]];
     
     //给Button初始化图标
-    [self.cancelBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_reject"] forState:UIControlStateNormal];
-    [self.acceptBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_accept"] forState:UIControlStateNormal];
-    [self.rejectBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_reject"] forState:UIControlStateNormal];
-    [self.muteBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_mute"] forState:UIControlStateNormal];
-    [self.hangupBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_reject"] forState:UIControlStateNormal];
-    [self.switchBtn setImage:[UIImage imageNamed:@"LTChat.bundle/Images/ic_btn_switch"] forState:UIControlStateNormal];
+    [self.cancelBtn setImage:[UIImage imageWithContentsOfFile: [selfBundle pathForResource:@"LTChat.bundle/Images/ic_btn_reject" ofType:@"png"]] forState:UIControlStateNormal];
+    [self.acceptBtn setImage:[UIImage imageWithContentsOfFile: [selfBundle pathForResource:@"LTChat.bundle/Images/ic_btn_accept" ofType:@"png"]] forState:UIControlStateNormal];
+    [self.rejectBtn setImage:[UIImage imageWithContentsOfFile: [selfBundle pathForResource:@"LTChat.bundle/Images/ic_btn_reject" ofType:@"png"]] forState:UIControlStateNormal];
+    [self.muteBtn setImage:[UIImage imageWithContentsOfFile: [selfBundle pathForResource:@"LTChat.bundle/Images/ic_btn_mute" ofType:@"png"]] forState:UIControlStateNormal];
+    [self.hangupBtn setImage:[UIImage imageWithContentsOfFile: [selfBundle pathForResource:@"LTChat.bundle/Images/ic_btn_reject" ofType:@"png"]] forState:UIControlStateNormal];
+    [self.switchBtn setImage:[UIImage imageWithContentsOfFile: [selfBundle pathForResource:@"LTChat.bundle/Images/ic_btn_switch" ofType:@"png"]]  forState:UIControlStateNormal];
     
     //给Button绑定事件
     [self.cancelBtn addTarget:self action:@selector(hangupClick) forControlEvents:UIControlEventTouchUpInside];
@@ -175,6 +177,8 @@
     _answered = answered;
     if (!self.callee) {
         [self connected];
+        self.actionView.hidden = NO;
+        self.callerActionView.hidden = YES;
     }
 }
 
