@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'LTChatDemo' do
     pod 'JSQMessagesViewController'
-    pod 'XMPPFramework', '~> 3.7.0'
-    pod 'GoogleWebRTC'
+    pod 'LTChat'
+#    pod 'XMPPFramework', '~> 3.7.0'
+#    pod 'GoogleWebRTC'
 end
