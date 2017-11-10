@@ -6,7 +6,18 @@ Chat use XMPP framework and WebRTC framework
 
 ####  Setup
 
-将代码拖拽到工程中，添加 **WebRTC** 和 **XMPP** 相关依赖
+##### Installation with CocoaPods
+
+LTChat is available in CocoaPods, specify it in your *Podfile*:
+
+```Objective-C
+    pod ‘LTChat’ , '~> 0.0.3’
+```
+
+
+#####  Drag Code
+
+Drag LTChat code into your project ,and also do not forget *WebRTC* and *XMPP* 
 
 ```Objective-C
     pod 'XMPPFramework', '~> 3.7.0'
