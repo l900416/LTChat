@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "LTChat"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Chat use XMPP framework and WebRTC framework."
   s.description  = <<-DESC
   Base on XMPP framework and WebRTC framework. First release.
