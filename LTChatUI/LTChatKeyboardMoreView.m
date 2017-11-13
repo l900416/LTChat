@@ -66,8 +66,8 @@ static NSString* LTChatKeyboardMoreCollectionViewCellIdentifier = @"LTChatKeyboa
     
     _pageControl = [[UIPageControl alloc] init];
     _pageControl.translatesAutoresizingMaskIntoConstraints = NO;
-    _pageControl.currentPage = 1;
-    _pageControl.numberOfPages = 2;
+    _pageControl.currentPage = 0;
+    _pageControl.numberOfPages = 0;
     [self addSubview:_pageControl];
     [self pinSubview:self.pageControl toEdge:NSLayoutAttributeBottom withConstant:0];//Bottom
     [self pinSubview:self.pageControl toEdge:NSLayoutAttributeCenterX];//Trailing

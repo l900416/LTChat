@@ -1,12 +1,14 @@
 # LTChat
 Chat use XMPP framework and WebRTC framework
 
+### Screenshots
+
+![](https://github.com/l900416/LTChat/blob/master/screenshots/1.png)
+
 
 ### Usage
 
-####  Setup
-
-##### Installation with CocoaPods
+####  Installation with CocoaPods
 
 LTChat is available in CocoaPods, specify it in your *Podfile*:
 
@@ -14,15 +16,6 @@ LTChat is available in CocoaPods, specify it in your *Podfile*:
     pod ‘LTChat’ , '~> 0.0.3’
 ```
 
-
-#####  Drag Code
-
-Drag LTChat code into your project ,and also do not forget *WebRTC* and *XMPP* 
-
-```Objective-C
-    pod 'XMPPFramework', '~> 3.7.0'
-    pod 'GoogleWebRTC'
-```
 
 ####  Configuration
 
@@ -75,17 +68,10 @@ WebRTC Messaging
  * Video Call UI
 
 
-### Screenshots
-
-![](https://github.com/l900416/LTChat/blob/master/screenshots/keyboard-1.png)
-![](https://github.com/l900416/LTChat/blob/master/screenshots/realtime-1.png)
-
 ### Release Log
 
- * v0.0.2
-   * **2017/10/20** Pod Support
- * v0.0.1
-   * **2017/10/16** Project Initialization
+ * 2017/10/20 Pod Support
+ * 2017/10/16 Project Initialization
 
 
 ## License

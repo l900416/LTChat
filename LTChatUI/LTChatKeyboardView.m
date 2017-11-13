@@ -70,19 +70,16 @@
     
     //更多功能 - 在工具栏下方
     _moreItemArray = @[
-                       @{@"name":@"照片1",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_photo",@"id":@"keyboard_photo"},
-                       @{@"name":@"拍摄2",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_take_photo",@"id":@"keyboard_take_photo"},
-                       @{@"name":@"视频聊天3",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_real_time",@"id":@"keyboard_real_time"},
-                       @{@"name":@"位置4",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_location",@"id":@"keyboard_location"},
-                       @{@"name":@"收藏5",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_favorite",@"id":@"keyboard_favorite"},
-                       @{@"name":@"卡券6",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_ticket",@"id":@"keyboard_tickets"},
+                       @{@"name":@"照片",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_photo",@"id":@"keyboard_photo"},
+                       @{@"name":@"拍摄",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_take_photo",@"id":@"keyboard_take_photo"},
+                       @{@"name":@"视频聊天",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_real_time",@"id":@"keyboard_real_time"},
+                       @{@"name":@"位置",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_location",@"id":@"keyboard_location"},
+                       @{@"name":@"收藏",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_favorite",@"id":@"keyboard_favorite"},
+                       @{@"name":@"卡券",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_ticket",@"id":@"keyboard_tickets"},
+                       @{@"name":@"红包",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_lucky_mokey",@"id":@"keyboard_tickets"},
+                       @{@"name":@"明信片",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_postcard",@"id":@"keyboard_tickets"},
+                       @{@"name":@"应用",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_postcard",@"id":@"keyboard_tickets"},
                        
-                       @{@"name":@"照片7",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_photo",@"id":@"keyboard_photo"},
-                       @{@"name":@"拍摄8",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_take_photo",@"id":@"keyboard_take_photo"},
-                       @{@"name":@"视频聊天9",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_real_time",@"id":@"keyboard_real_time"},
-                       @{@"name":@"位置10",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_location",@"id":@"keyboard_location"},
-                       @{@"name":@"收藏11",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_favorite",@"id":@"keyboard_favorite"},
-                       @{@"name":@"卡券12",@"image":@"LTChatUI.bundle/Images/ic_keyboard_more_ticket",@"id":@"keyboard_tickets"},
                        ];
     self.moreKeyboard = [[LTChatKeyboardMoreView alloc] init];
     self.moreKeyboard.delegate = self;

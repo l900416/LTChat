@@ -22,7 +22,7 @@
 #define LTChatKeyboardMoreViewHeight 204
 
 //颜色
-#define LTChatKeyboardViewBackgroundColor   [UIColor whiteColor]
+#define LTChatKeyboardViewBackgroundColor   [UIColor colorWithRed:240.0/255.0 green:240.0/255.0 blue:240.0/255.0 alpha:1]
 
 //展示表情键盘
 #define kLTChatUIKeyboardEmojiKeyboardShowKey          @"kLTChatUIKeyboardEmojiKeyboardShowKey"

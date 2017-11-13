@@ -10,8 +10,8 @@
 #import "LTChatUIConfig.h"
 
 
-#define kLTKeyboardFaceEmojiItem_ROW 4
-#define kLTKeyboardFaceEmojiItem_COL 8
+#define kLTKeyboardFaceEmojiItem_ROW 3
+#define kLTKeyboardFaceEmojiItem_COL 7
 
 /**
  * 更多功能协议，包括数据源和操作

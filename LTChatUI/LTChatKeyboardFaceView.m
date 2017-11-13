@@ -12,11 +12,17 @@
 
 @interface LTChatKeyboardFaceView()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,LTChatKeyboardFaceEmojiViewDelegate>
 
+@property (nonatomic, strong) NSMutableArray* faceDataSource;
+
+//表情键盘
 @property (nonatomic, strong) LTChatKebaordFaceEmojiView* emojiView;
+@property (nonatomic, strong) NSDictionary* emojiDic;
+
+//下方滚动工具栏
 @property (nonatomic, strong) UICollectionView* collectionView;
 
 
-@property (nonatomic, strong) NSArray* emojiDataSource;
+
 @property (nonatomic, assign) NSInteger selectedIndex;
 
 @end
@@ -52,11 +58,9 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
     self.translatesAutoresizingMaskIntoConstraints = NO;
     self.backgroundColor = LTChatKeyboardViewBackgroundColor;
     
-    //数据相关
-    NSURL *emojiPlistURL = [[NSBundle mainBundle] URLForResource:@"LTChatUI.bundle/LTChatEmoji" withExtension:@"plist"];
-    _emojiDataSource = [NSArray arrayWithContentsOfURL:emojiPlistURL];
-    
-    
+    //数据源
+    [self dataSourceInit];
+
     //上半部分的表情键盘区域
     self.emojiView = [[LTChatKebaordFaceEmojiView alloc] init];
     self.emojiView.delegate = self;
@@ -84,10 +88,6 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
     [self pinSubview:self.collectionView toEdge:NSLayoutAttributeTrailing];//Trailing
     [self pinSubview:self.collectionView withAttribute:NSLayoutAttributeHeight constant:LTChatKeyboardFaceViewToolHeight];//height
     
-    
-    self.collectionView.backgroundColor = [UIColor lightGrayColor];
-    
-    
     _selectedIndex = 0;
     [self.emojiView reloadEmojis];//初始化更新表情键盘
     
@@ -102,7 +102,7 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
     return 0;
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
-    return 0;
+    return 1;
 }
 
 #pragma mark - UICollectionView data source
@@ -112,14 +112,22 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
 }
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section{
-    return [_emojiDataSource count];
+    return [_faceDataSource count];
     
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;{
     LTChatKeyboardFaceEmojiCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:LTChatKeyboardFaceEmojiCollectionViewCellIdentifier forIndexPath:indexPath];
     
-    cell.emojiStr = [[_emojiDataSource objectAtIndex:indexPath.row] objectForKey:@"cover"];
+    if(indexPath.row == 0){
+        cell.emojiStr = [_emojiDic objectForKey:@"cover"];
+    }else if(indexPath.row == 1){
+        cell.emojiStr = @"+";
+    }else{
+        cell.emojiStr = @"";
+    }
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+    
     
     return cell;
 }
@@ -133,7 +141,7 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
 
 #pragma mark LTChatKeyboardFaceEmojiViewDelegate
 -(NSInteger)numberOfEmojis{
-    NSInteger allCount = [[[_emojiDataSource objectAtIndex:_selectedIndex] objectForKey:@"emoji"] count];
+    NSInteger allCount = [[_emojiDic objectForKey:@"emoji"] count];
     NSInteger countPerPage = kLTKeyboardFaceEmojiItem_ROW * kLTKeyboardFaceEmojiItem_COL;
     NSInteger number = (allCount / countPerPage + 1) * countPerPage;
     return number;
@@ -146,16 +154,31 @@ static NSString* LTChatKeyboardFaceEmojiCollectionViewCellIdentifier = @"LTChatK
     
     NSInteger row = index % countPerPage % kLTKeyboardFaceEmojiItem_ROW;
     NSInteger col = index % countPerPage / kLTKeyboardFaceEmojiItem_ROW;
-    NSInteger allCount = [[[_emojiDataSource objectAtIndex:_selectedIndex] objectForKey:@"emoji"] count];
+    NSInteger allCount = [[_emojiDic objectForKey:@"emoji"] count];
     NSInteger dIndex = page * countPerPage + (row * kLTKeyboardFaceEmojiItem_COL + col);
     if (dIndex >= allCount) {
         return nil;
     }else{
-        return [[[_emojiDataSource objectAtIndex:_selectedIndex] objectForKey:@"emoji"] objectAtIndex:dIndex];
+        return [[_emojiDic objectForKey:@"emoji"] objectAtIndex:dIndex];
     }
 }
 -(void)didSelectedEmojiAtIndex:(NSInteger)index{
     
+}
+
+
+#pragma mark - Private - DataSource
+-(void)dataSourceInit{
+    _faceDataSource = [[NSMutableArray alloc] init];
+    //表情键盘数据相关
+    NSURL *emojiPlistURL = [[NSBundle mainBundle] URLForResource:@"LTChatUI.bundle/LTChatEmoji" withExtension:@"plist"];
+    _emojiDic = [NSDictionary dictionaryWithContentsOfURL:emojiPlistURL];
+    if(_emojiDic){
+        [_faceDataSource addObject:_emojiDic];
+    }
+    
+    //占位符
+    [_faceDataSource addObject:@"占位"];
 }
 
 @end
