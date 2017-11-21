@@ -1,5 +1,7 @@
 # LTChat
-Chat use XMPP framework and WebRTC framework
+Chat use XMPP framework and WebRTC framework.
+
+Intruduction to [WebRTC](https://l900416.github.io/2017/11/21/ios_instance_message_webrtc_message/)
 
 ### Screenshots
 
@@ -66,6 +68,7 @@ WebRTC Messaging
  * ~~Pod support~~
  * Chat Message UI
  * Video Call UI
+
 
 
 ### Release Log
