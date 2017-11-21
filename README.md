@@ -1,8 +1,6 @@
 # LTChat
 Chat use XMPP framework and WebRTC framework.
 
-Intruduction to [WebRTC](https://l900416.github.io/2017/11/21/ios_instance_message_webrtc_message/)
-
 ### Screenshots
 
 ![](https://github.com/l900416/LTChat/blob/master/screenshots/1.png)
@@ -61,6 +59,8 @@ WebRTC Messaging
     [client showRTCViewByRemoteName:self.chatJID.full isVideo:YES isCaller:YES];
 }
 ```
+
+![](https://l900416.github.io/post/message/webrtc_messaging.svg)
 
 
 ### Upcoming features
